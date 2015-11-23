@@ -1,0 +1,916 @@
+.about-page, .noscroll, .home-page .about-page {
+  /* Demo mockups */
+  /* Morph Button: Default Styles */
+  /* Common styles for overlay and modal type (fixed morph) */
+  /* Transitions for overlay button and sidebar button */
+  /* Morph Button Style: Overlay */
+  /* Morph Button Style: Modal */
+  /* Colors and sizes for individual modals */
+  /* Morph Button Style: In the content flow */
+  /* Colors and sizes for individual in flow buttons */
+  /* Morph Button Style: Sidebar */
+  /* Let's add some nice easing for all cases */
+  /* Helper classes */
+  /* No JS fallback: let's hide the button and show the content */
+  /* Media Queries */
+  /* Icons */
+  /* Styles for dummy content */
+  /* Style for overlay */
+  /* Style for text modal */
+  /* Style for form modal */ }
+  .about-page a, .about-page button, .noscroll a, .noscroll button, .home-page .about-page a, .home-page .about-page button {
+    color: #eb5338;
+    text-decoration: none;
+    outline: none; }
+  .about-page a:hover, .about-page a:focus, .noscroll a:hover, .noscroll a:focus, .home-page .about-page a:hover, .home-page .about-page a:focus {
+    color: #eb6a5a; }
+  .about-page section, .noscroll section, .home-page .about-page section {
+    padding: 2em;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    clear: both; }
+  .about-page section p, .noscroll section p, .home-page .about-page section p {
+    font-size: 1.5em;
+    line-height: 1.75; }
+  .about-page section > p:first-child, .noscroll section > p:first-child, .home-page .about-page section > p:first-child {
+    text-align: center; }
+  .about-page section.related, .noscroll section.related, .home-page .about-page section.related {
+    text-align: center; }
+  .about-page .related a img, .noscroll .related a img, .home-page .about-page .related a img {
+    max-width: 100%;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s; }
+  .about-page .related a:hover img,
+  .about-page .related a:active img, .noscroll .related a:hover img,
+  .noscroll .related a:active img, .home-page .about-page .related a:hover img,
+  .home-page .about-page .related a:active img {
+    opacity: 1; }
+  .about-page .related a h3, .noscroll .related a h3, .home-page .about-page .related a h3 {
+    margin: 0;
+    padding: 0.5em 0 0.3em;
+    max-width: 300px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-align: left;
+    font-family: "Raleway", sans-serif; }
+  .about-page .mockup-content, .noscroll .mockup-content, .home-page .about-page .mockup-content {
+    text-align: center; }
+  .about-page .demo-4 .mockup-content, .noscroll .demo-4 .mockup-content, .home-page .about-page .demo-4 .mockup-content {
+    padding: 1em 0 3em; }
+  .about-page .demo-5 .mockup-content, .noscroll .demo-5 .mockup-content, .home-page .about-page .demo-5 .mockup-content {
+    padding: 1em 0 6em; }
+  .about-page .mockup-content > span, .noscroll .mockup-content > span, .home-page .about-page .mockup-content > span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 100%;
+    margin: 0 0 10px;
+    clear: both; }
+  .about-page .mockup-content > span:nth-child(2),
+  .about-page .mockup-content > span:nth-child(3),
+  .about-page .mockup-content > span:nth-last-child(2), .noscroll .mockup-content > span:nth-child(2),
+  .noscroll .mockup-content > span:nth-child(3),
+  .noscroll .mockup-content > span:nth-last-child(2), .home-page .about-page .mockup-content > span:nth-child(2),
+  .home-page .about-page .mockup-content > span:nth-child(3),
+  .home-page .about-page .mockup-content > span:nth-last-child(2) {
+    width: calc(50% - 5px);
+    float: left;
+    clear: none;
+    height: 80px; }
+  .about-page .mockup-content > span:nth-child(3),
+  .about-page .mockup-content > span:nth-last-child(2), .noscroll .mockup-content > span:nth-child(3),
+  .noscroll .mockup-content > span:nth-last-child(2), .home-page .about-page .mockup-content > span:nth-child(3),
+  .home-page .about-page .mockup-content > span:nth-last-child(2) {
+    float: right; }
+  .about-page .mockup-content > span:nth-last-child(2), .noscroll .mockup-content > span:nth-last-child(2), .home-page .about-page .mockup-content > span:nth-last-child(2) {
+    width: calc(100% - 310px); }
+  .about-page .no-js .mockup-content > span:nth-last-child(2), .noscroll .no-js .mockup-content > span:nth-last-child(2), .home-page .about-page .no-js .mockup-content > span:nth-last-child(2) {
+    width: 100%; }
+  .about-page .mockup-content h2, .noscroll .mockup-content h2, .home-page .about-page .mockup-content h2 {
+    font-size: 2em;
+    margin: 0; }
+  .about-page .mockup-content > p, .noscroll .mockup-content > p, .home-page .about-page .mockup-content > p {
+    font-family: 'Blokk', sans-serif;
+    font-size: 0.85em;
+    text-align: center;
+    opacity: 0.5;
+    margin: 0;
+    overflow: hidden; }
+  .about-page .no-js .joiner, .noscroll .no-js .joiner, .home-page .about-page .no-js .joiner {
+    display: block; }
+  .about-page .demo-5 .mockup-content > p, .noscroll .demo-5 .mockup-content > p, .home-page .about-page .demo-5 .mockup-content > p {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0.5em 0;
+    text-align: justify;
+    font-family: 'Raleway', Arial, sans-serif; }
+  .about-page .js .fixed-block, .noscroll .js .fixed-block, .home-page .about-page .js .fixed-block {
+    min-height: 300px;
+    position: relative; }
+  .about-page .mockup-left, .noscroll .mockup-left, .home-page .about-page .mockup-left {
+    float: left;
+    max-width: 100%;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 40px 50px 0;
+    background: rgba(0, 0, 0, 0.1);
+    height: 400px;
+    position: relative; }
+  .about-page .mockup-left::after, .noscroll .mockup-left::after, .home-page .about-page .mockup-left::after {
+    content: '\2234';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.05);
+    font-size: 15em; }
+  .about-page .mockup-right, .noscroll .mockup-right, .home-page .about-page .mockup-right {
+    text-align: left; }
+  .about-page html.demo-7, .about-page .demo-7 body, .noscroll html.demo-7, .noscroll .demo-7 body, .home-page .about-page html.demo-7, .home-page .about-page .demo-7 body {
+    overflow-x: hidden;
+    height: 100%; }
+  .about-page .demo-7 .container, .noscroll .demo-7 .container, .home-page .about-page .demo-7 .container {
+    width: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0.1s;
+    transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0.1s; }
+  .about-page .no-js.demo-7 .container, .noscroll .no-js.demo-7 .container, .home-page .about-page .no-js.demo-7 .container {
+    width: calc(100% - 300px);
+    right: 0; }
+  .about-page .pushed.container, .noscroll .pushed.container, .home-page .about-page .pushed.container {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px); }
+  @media screen and (max-width: 770px) {
+    .about-page .mockup-left, .noscroll .mockup-left, .home-page .about-page .mockup-left {
+      float: none;
+      margin: 0 auto 20px; }
+    .about-page .mockup-right, .noscroll .mockup-right, .home-page .about-page .mockup-right {
+      text-align: center; }
+    .about-page .joiner, .noscroll .joiner, .home-page .about-page .joiner {
+      display: block; } }
+  @media screen and (max-width: 400px) {
+    .about-page .mockup-content > span:nth-last-child(2), .noscroll .mockup-content > span:nth-last-child(2), .home-page .about-page .mockup-content > span:nth-last-child(2) {
+      width: calc(100% - 210px); } }
+  @media screen and (max-width: 25em) {
+    .about-page .codrops-icon span, .noscroll .codrops-icon span, .home-page .about-page .codrops-icon span {
+      display: none; } }
+  .about-page .morph-button, .noscroll .morph-button, .home-page .about-page .morph-button {
+    position: relative;
+    display: block;
+    margin: 0 auto; }
+  .about-page .morph-button > button, .noscroll .morph-button > button, .home-page .about-page .morph-button > button {
+    position: relative;
+    padding: 0 1em;
+    border: none;
+    background-color: #eb6a5a;
+    color: #f9f6e5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 80px;
+    overflow: hidden; }
+  .about-page .morph-button.open > button, .noscroll .morph-button.open > button, .home-page .about-page .morph-button.open > button {
+    pointer-events: none; }
+  .about-page .morph-content, .noscroll .morph-content, .home-page .about-page .morph-content {
+    pointer-events: none; }
+  .about-page .morph-button.open .morph-content, .noscroll .morph-button.open .morph-content, .home-page .about-page .morph-button.open .morph-content {
+    pointer-events: auto; }
+  .about-page .morph-button-fixed,
+  .about-page .morph-button-fixed .morph-content, .noscroll .morph-button-fixed,
+  .noscroll .morph-button-fixed .morph-content, .home-page .about-page .morph-button-fixed,
+  .home-page .about-page .morph-button-fixed .morph-content {
+    width: 300px;
+    height: 80px; }
+  .about-page .morph-button-fixed > button, .noscroll .morph-button-fixed > button, .home-page .about-page .morph-button-fixed > button {
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 0.1s 0.5s;
+    transition: opacity 0.1s 0.5s; }
+  .about-page .morph-button-fixed.open > button, .noscroll .morph-button-fixed.open > button, .home-page .about-page .morph-button-fixed.open > button {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s;
+    transition: opacity 0.1s; }
+  .about-page .morph-button-fixed .morph-content, .noscroll .morph-button-fixed .morph-content, .home-page .about-page .morph-button-fixed .morph-content {
+    position: fixed;
+    z-index: 900;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+    transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s; }
+  .about-page .morph-button-fixed.open .morph-content, .noscroll .morph-button-fixed.open .morph-content, .home-page .about-page .morph-button-fixed.open .morph-content {
+    opacity: 1; }
+  .about-page .morph-button-fixed .morph-content > div, .noscroll .morph-button-fixed .morph-content > div, .home-page .about-page .morph-button-fixed .morph-content > div {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+    transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s; }
+  .about-page .morph-button-fixed.open .morph-content > div, .noscroll .morph-button-fixed.open .morph-content > div, .home-page .about-page .morph-button-fixed.open .morph-content > div {
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s 0.5s;
+    transition: opacity 0.3s 0.5s; }
+  .about-page .morph-button-fixed.active > button, .noscroll .morph-button-fixed.active > button, .home-page .about-page .morph-button-fixed.active > button {
+    z-index: 2000; }
+  .about-page .morph-button-fixed.active .morph-content, .noscroll .morph-button-fixed.active .morph-content, .home-page .about-page .morph-button-fixed.active .morph-content {
+    z-index: 1900; }
+  .about-page .morph-button-overlay .morph-content,
+  .about-page .morph-button-sidebar .morph-content, .noscroll .morph-button-overlay .morph-content,
+  .noscroll .morph-button-sidebar .morph-content, .home-page .about-page .morph-button-overlay .morph-content,
+  .home-page .about-page .morph-button-sidebar .morph-content {
+    -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+    transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s; }
+  .about-page .morph-button-overlay.open .morph-content,
+  .about-page .morph-button-sidebar.open .morph-content, .noscroll .morph-button-overlay.open .morph-content,
+  .noscroll .morph-button-sidebar.open .morph-content, .home-page .about-page .morph-button-overlay.open .morph-content,
+  .home-page .about-page .morph-button-sidebar.open .morph-content {
+    -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+    transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s; }
+  .about-page .morph-button.morph-button-overlay, .noscroll .morph-button.morph-button-overlay, .home-page .about-page .morph-button.morph-button-overlay {
+    margin: 50px auto; }
+  .about-page .morph-button-overlay .morph-content, .noscroll .morph-button-overlay .morph-content, .home-page .about-page .morph-button-overlay .morph-content {
+    overflow: hidden;
+    background: #eb6a5a; }
+  .about-page .morph-button-overlay.open .morph-content, .noscroll .morph-button-overlay.open .morph-content, .home-page .about-page .morph-button-overlay.open .morph-content {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%; }
+  .about-page .morph-button-modal::before, .noscroll .morph-button-modal::before, .home-page .about-page .morph-button-modal::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    pointer-events: none; }
+  .about-page .morph-button-modal.open::before, .noscroll .morph-button-modal.open::before, .home-page .about-page .morph-button-modal.open::before {
+    opacity: 1;
+    pointer-events: auto; }
+  .about-page .morph-button-modal.active::before, .noscroll .morph-button-modal.active::before, .home-page .about-page .morph-button-modal.active::before {
+    z-index: 1800; }
+  .about-page .morph-button-modal .morph-content, .noscroll .morph-button-modal .morph-content, .home-page .about-page .morph-button-modal .morph-content {
+    overflow: hidden;
+    -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+    transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s; }
+  .about-page .morph-button-modal.open .morph-content, .noscroll .morph-button-modal.open .morph-content, .home-page .about-page .morph-button-modal.open .morph-content {
+    top: 50% !important;
+    left: 50% !important;
+    margin: -210px 0 0 -300px;
+    width: 600px;
+    height: 420px;
+    -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+    transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s; }
+  .about-page .morph-button.morph-button-modal-1, .noscroll .morph-button.morph-button-modal-1, .home-page .about-page .morph-button.morph-button-modal-1 {
+    float: left; }
+  .about-page .morph-button.morph-button-modal-2,
+  .about-page .morph-button.morph-button-modal-3, .noscroll .morph-button.morph-button-modal-2,
+  .noscroll .morph-button.morph-button-modal-3, .home-page .about-page .morph-button.morph-button-modal-2,
+  .home-page .about-page .morph-button.morph-button-modal-3 {
+    display: inline-block;
+    margin: 10px 15px; }
+  .about-page .morph-button-modal-1 > button,
+  .about-page .morph-button-modal-1 .morph-content, .noscroll .morph-button-modal-1 > button,
+  .noscroll .morph-button-modal-1 .morph-content, .home-page .about-page .morph-button-modal-1 > button,
+  .home-page .about-page .morph-button-modal-1 .morph-content {
+    background-color: #553445; }
+  .about-page .morph-button-modal-2 > button,
+  .about-page .morph-button-modal-2 .morph-content,
+  .about-page .morph-button-modal-3 > button,
+  .about-page .morph-button-modal-3 .morph-content, .noscroll .morph-button-modal-2 > button,
+  .noscroll .morph-button-modal-2 .morph-content,
+  .noscroll .morph-button-modal-3 > button,
+  .noscroll .morph-button-modal-3 .morph-content, .home-page .about-page .morph-button-modal-2 > button,
+  .home-page .about-page .morph-button-modal-2 .morph-content,
+  .home-page .about-page .morph-button-modal-3 > button,
+  .home-page .about-page .morph-button-modal-3 .morph-content {
+    background-color: #fef0e3;
+    color: #eb6a5a; }
+  .about-page .morph-button-modal-4, .noscroll .morph-button-modal-4, .home-page .about-page .morph-button-modal-4 {
+    display: inline-block; }
+  .about-page .morph-button-modal-4 > button,
+  .about-page .morph-button-modal-4 .morph-content, .noscroll .morph-button-modal-4 > button,
+  .noscroll .morph-button-modal-4 .morph-content, .home-page .about-page .morph-button-modal-4 > button,
+  .home-page .about-page .morph-button-modal-4 .morph-content {
+    background-color: #faf1e0;
+    color: #553445; }
+  .about-page .morph-button-modal-4 > button span,
+  .about-page .morph-button-modal-4 .morph-clone, .noscroll .morph-button-modal-4 > button span,
+  .noscroll .morph-button-modal-4 .morph-clone, .home-page .about-page .morph-button-modal-4 > button span,
+  .home-page .about-page .morph-button-modal-4 .morph-clone {
+    padding-left: 10px;
+    color: #286f81; }
+  .about-page .morph-button-modal-4 .morph-clone, .noscroll .morph-button-modal-4 .morph-clone, .home-page .about-page .morph-button-modal-4 .morph-clone {
+    position: absolute;
+    right: 34px;
+    bottom: 30px;
+    z-index: 100;
+    letter-spacing: 1px;
+    font-weight: 700;
+    -webkit-transition: bottom 0.4s 0.1s, right 0.4s 0.1s;
+    transition: bottom 0.4s 0.1s, right 0.4s 0.1s; }
+  .about-page .morph-button-modal-4.open .morph-clone,
+  .about-page .no-js .morph-button-modal-4 .morph-clone, .noscroll .morph-button-modal-4.open .morph-clone,
+  .noscroll .no-js .morph-button-modal-4 .morph-clone, .home-page .about-page .morph-button-modal-4.open .morph-clone,
+  .home-page .about-page .no-js .morph-button-modal-4 .morph-clone {
+    right: 10px;
+    bottom: 10px; }
+  .about-page .morph-button-modal-1::before, .noscroll .morph-button-modal-1::before, .home-page .about-page .morph-button-modal-1::before {
+    background: rgba(240, 221, 204, 0.7); }
+  .about-page .morph-button-modal-2.open .morph-content, .noscroll .morph-button-modal-2.open .morph-content, .home-page .about-page .morph-button-modal-2.open .morph-content {
+    margin: -210px 0 0 -170px;
+    width: 340px;
+    height: 420px; }
+  .about-page .morph-button-modal-3.open .morph-content, .noscroll .morph-button-modal-3.open .morph-content, .home-page .about-page .morph-button-modal-3.open .morph-content {
+    margin: -255px 0 0 -210px;
+    width: 420px;
+    height: 510px; }
+  .about-page .morph-button-modal-3.open .morph-content > div, .noscroll .morph-button-modal-3.open .morph-content > div, .home-page .about-page .morph-button-modal-3.open .morph-content > div {
+    height: 420px; }
+  .about-page .morph-button-modal-2.open .morph-content > div,
+  .about-page .morph-button-modal-3.open .morph-content > div, .noscroll .morph-button-modal-2.open .morph-content > div,
+  .noscroll .morph-button-modal-3.open .morph-content > div, .home-page .about-page .morph-button-modal-2.open .morph-content > div,
+  .home-page .about-page .morph-button-modal-3.open .morph-content > div {
+    -webkit-transition: opacity 0.3s 0.3s;
+    transition: opacity 0.3s 0.3s; }
+  .about-page .morph-button-modal-4.open .morph-content, .noscroll .morph-button-modal-4.open .morph-content, .home-page .about-page .morph-button-modal-4.open .morph-content {
+    margin: -200px 0 0 -320px;
+    width: 640px;
+    height: 400px; }
+  .about-page .morph-button-inflow, .noscroll .morph-button-inflow, .home-page .about-page .morph-button-inflow {
+    overflow: hidden;
+    max-width: 100%;
+    height: 70px; }
+  .about-page .morph-button-inflow > button, .noscroll .morph-button-inflow > button, .home-page .about-page .morph-button-inflow > button {
+    width: 100%;
+    line-height: 70px; }
+  .about-page .morph-button-inflow .morph-content, .noscroll .morph-button-inflow .morph-content, .home-page .about-page .morph-button-inflow .morph-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .about-page .morph-button-inflow .morph-content .morph-clone, .noscroll .morph-button-inflow .morph-content .morph-clone, .home-page .about-page .morph-button-inflow .morph-content .morph-clone {
+    padding: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 70px; }
+  .about-page .morph-button-inflow-1, .noscroll .morph-button-inflow-1, .home-page .about-page .morph-button-inflow-1 {
+    width: 600px;
+    margin: 2em auto;
+    -webkit-transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1); }
+  .about-page .morph-button-inflow-1 > button span, .noscroll .morph-button-inflow-1 > button span, .home-page .about-page .morph-button-inflow-1 > button span {
+    visibility: hidden; }
+  .about-page .morph-button-inflow-1 .morph-content .morph-clone, .noscroll .morph-button-inflow-1 .morph-content .morph-clone, .home-page .about-page .morph-button-inflow-1 .morph-content .morph-clone {
+    color: #f9f6e5;
+    background: #eb6a5a; }
+  .about-page .morph-button-inflow-2, .noscroll .morph-button-inflow-2, .home-page .about-page .morph-button-inflow-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    background-color: #fef0e3;
+    -webkit-transition: height 0.3s, width 0.3s, -webkit-transform 0.3s;
+    transition: height 0.3s, width 0.3s, transform 0.3s;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+  .about-page .morph-button-inflow-2 > button, .noscroll .morph-button-inflow-2 > button, .home-page .about-page .morph-button-inflow-2 > button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #eb6a5a;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s; }
+  .about-page .morph-button-inflow-2.open > button, .noscroll .morph-button-inflow-2.open > button, .home-page .about-page .morph-button-inflow-2.open > button {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  .about-page .morph-button-inflow-2 .morph-content, .noscroll .morph-button-inflow-2 .morph-content, .home-page .about-page .morph-button-inflow-2 .morph-content {
+    width: 260px;
+    height: 200px; }
+  .about-page .morph-button-inflow-2.open, .noscroll .morph-button-inflow-2.open, .home-page .about-page .morph-button-inflow-2.open {
+    width: 260px; }
+  .about-page .morph-button-sidebar,
+  .about-page .morph-button-sidebar .morph-content, .noscroll .morph-button-sidebar,
+  .noscroll .morph-button-sidebar .morph-content, .home-page .about-page .morph-button-sidebar,
+  .home-page .about-page .morph-button-sidebar .morph-content {
+    width: 60px;
+    height: 60px; }
+  .about-page .morph-button-sidebar, .noscroll .morph-button-sidebar, .home-page .about-page .morph-button-sidebar {
+    position: fixed;
+    bottom: 50px;
+    left: 50px; }
+  .about-page .morph-button-sidebar > button, .noscroll .morph-button-sidebar > button, .home-page .about-page .morph-button-sidebar > button {
+    line-height: 60px;
+    font-size: 1.6em;
+    padding: 0; }
+  .about-page .morph-button-sidebar .morph-content, .noscroll .morph-button-sidebar .morph-content, .home-page .about-page .morph-button-sidebar .morph-content {
+    background: #eb6a5a; }
+  .about-page .morph-button-sidebar.open .morph-content, .noscroll .morph-button-sidebar.open .morph-content, .home-page .about-page .morph-button-sidebar.open .morph-content {
+    top: 0 !important;
+    left: 0 !important;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden; }
+  .about-page .morph-button .morph-content,
+  .about-page .morph-button.open .morph-content,
+  .about-page .morph-button-modal-4 .morph-clone, .noscroll .morph-button .morph-content,
+  .noscroll .morph-button.open .morph-content,
+  .noscroll .morph-button-modal-4 .morph-clone, .home-page .about-page .morph-button .morph-content,
+  .home-page .about-page .morph-button.open .morph-content,
+  .home-page .about-page .morph-button-modal-4 .morph-clone {
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
+  .about-page .noscroll, .noscroll .noscroll, .home-page .about-page .noscroll {
+    overflow: hidden; }
+  .about-page .morph-button-overlay.scroll .morph-content, .noscroll .morph-button-overlay.scroll .morph-content, .home-page .about-page .morph-button-overlay.scroll .morph-content {
+    overflow-y: scroll; }
+  .about-page .morph-button-sidebar.scroll .morph-content, .noscroll .morph-button-sidebar.scroll .morph-content, .home-page .about-page .morph-button-sidebar.scroll .morph-content {
+    overflow: auto; }
+  .about-page .no-js .morph-button > button, .noscroll .no-js .morph-button > button, .home-page .about-page .no-js .morph-button > button {
+    display: none; }
+  .about-page .no-js .morph-button, .noscroll .no-js .morph-button, .home-page .about-page .no-js .morph-button {
+    margin: 10px 0;
+    float: none; }
+  .about-page .no-js .morph-button,
+  .about-page .no-js .morph-button .morph-content,
+  .about-page .no-js .morph-button .morph-content > div, .noscroll .no-js .morph-button,
+  .noscroll .no-js .morph-button .morph-content,
+  .noscroll .no-js .morph-button .morph-content > div, .home-page .about-page .no-js .morph-button,
+  .home-page .about-page .no-js .morph-button .morph-content,
+  .home-page .about-page .no-js .morph-button .morph-content > div {
+    position: relative;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+    transform: none;
+    pointer-events: auto; }
+  .about-page .no-js .morph-button .morph-content .icon-close, .noscroll .no-js .morph-button .morph-content .icon-close, .home-page .about-page .no-js .morph-button .morph-content .icon-close {
+    display: none; }
+  .about-page .no-js .morph-button-sidebar, .noscroll .no-js .morph-button-sidebar, .home-page .about-page .no-js .morph-button-sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    background: #eb6a5a;
+    overflow: auto; }
+  .about-page .no-transition, .noscroll .no-transition, .home-page .about-page .no-transition {
+    -webkit-transition: none !important;
+    transition: none !important; }
+  @media screen and (max-width: 600px) {
+    .about-page .morph-button-modal.open .morph-content, .noscroll .morph-button-modal.open .morph-content, .home-page .about-page .morph-button-modal.open .morph-content {
+      top: 0% !important;
+      left: 0% !important;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+      transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s; } }
+  @media screen and (max-width: 400px) {
+    .about-page .morph-button-fixed,
+    .about-page .morph-button-fixed .morph-content, .noscroll .morph-button-fixed,
+    .noscroll .morph-button-fixed .morph-content, .home-page .about-page .morph-button-fixed,
+    .home-page .about-page .morph-button-fixed .morph-content {
+      width: 200px;
+      height: 80px; }
+    .about-page .morph-button-fixed > button, .noscroll .morph-button-fixed > button, .home-page .about-page .morph-button-fixed > button {
+      font-size: 75%; }
+    .about-page .morph-button-sidebar > button, .noscroll .morph-button-sidebar > button, .home-page .about-page .morph-button-sidebar > button {
+      font-size: 1.6em; }
+    .about-page .morph-button-inflow .morph-content .morph-clone, .noscroll .morph-button-inflow .morph-content .morph-clone, .home-page .about-page .morph-button-inflow .morph-content .morph-clone {
+      font-size: 0.9em; }
+    .about-page .morph-button-modal-4,
+    .about-page .morph-button-modal-4 .morph-content, .noscroll .morph-button-modal-4,
+    .noscroll .morph-button-modal-4 .morph-content, .home-page .about-page .morph-button-modal-4,
+    .home-page .about-page .morph-button-modal-4 .morph-content {
+      width: 220px;
+      height: 120px; }
+    .about-page .morph-button-modal-4 > button, .noscroll .morph-button-modal-4 > button, .home-page .about-page .morph-button-modal-4 > button {
+      font-size: 100%;
+      line-height: 50px; }
+    .about-page .morph-button-modal-4 > button span, .noscroll .morph-button-modal-4 > button span, .home-page .about-page .morph-button-modal-4 > button span {
+      display: block; }
+    .about-page .morph-button-modal-4 .morph-clone, .noscroll .morph-button-modal-4 .morph-clone, .home-page .about-page .morph-button-modal-4 .morph-clone {
+      right: 83px;
+      bottom: 26px; }
+    .about-page .morph-button-sidebar,
+    .about-page .morph-button-sidebar .morph-content, .noscroll .morph-button-sidebar,
+    .noscroll .morph-button-sidebar .morph-content, .home-page .about-page .morph-button-sidebar,
+    .home-page .about-page .morph-button-sidebar .morph-content {
+      width: 100% !important;
+      height: 60px !important; }
+    .about-page .morph-button-sidebar, .noscroll .morph-button-sidebar, .home-page .about-page .morph-button-sidebar {
+      bottom: 0px;
+      left: 0px; }
+    .about-page .morph-button-sidebar.open .morph-content, .noscroll .morph-button-sidebar.open .morph-content, .home-page .about-page .morph-button-sidebar.open .morph-content {
+      height: 100% !important; } }
+  .about-page .icon-close, .noscroll .icon-close, .home-page .about-page .icon-close {
+    z-index: 10000;
+    display: block;
+    overflow: hidden;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 3;
+    cursor: pointer; }
+  .about-page .icon:before, .noscroll .icon:before, .home-page .about-page .icon:before {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'icomoon';
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .about-page .icon-camera:before, .noscroll .icon-camera:before, .home-page .about-page .icon-camera:before {
+    content: "\e017"; }
+  .about-page .icon-server:before, .noscroll .icon-server:before, .home-page .about-page .icon-server:before {
+    content: "\e022"; }
+  .about-page .icon-heart:before, .noscroll .icon-heart:before, .home-page .about-page .icon-heart:before {
+    content: "\e024"; }
+  .about-page .icon-zoom-in:before, .noscroll .icon-zoom-in:before, .home-page .about-page .icon-zoom-in:before {
+    content: "\e037"; }
+  .about-page .icon-microphone:before, .noscroll .icon-microphone:before, .home-page .about-page .icon-microphone:before {
+    content: "\e048"; }
+  .about-page .icon-cloud:before, .noscroll .icon-cloud:before, .home-page .about-page .icon-cloud:before {
+    content: "\e066"; }
+  .about-page .icon-user:before, .noscroll .icon-user:before, .home-page .about-page .icon-user:before {
+    content: "\e074"; }
+  .about-page .icon-briefcase:before, .noscroll .icon-briefcase:before, .home-page .about-page .icon-briefcase:before {
+    content: "\e075"; }
+  .about-page .icon-globe:before, .noscroll .icon-globe:before, .home-page .about-page .icon-globe:before {
+    content: "\e078"; }
+  .about-page .icon-cog::before, .noscroll .icon-cog::before, .home-page .about-page .icon-cog::before {
+    content: "\e600"; }
+  .about-page .icon-close::before, .noscroll .icon-close::before, .home-page .about-page .icon-close::before {
+    content: "\e601"; }
+  .about-page .icon-play::before, .noscroll .icon-play::before, .home-page .about-page .icon-play::before {
+    content: "\e602"; }
+  .about-page .icon-pause::before, .noscroll .icon-pause::before, .home-page .about-page .icon-pause::before {
+    content: "\e603"; }
+  .about-page .icon-close, .noscroll .icon-close, .home-page .about-page .icon-close {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+  .about-page .icon-close:hover, .noscroll .icon-close:hover, .home-page .about-page .icon-close:hover {
+    color: #a50a05; }
+  .about-page .content-style-overlay, .noscroll .content-style-overlay, .home-page .about-page .content-style-overlay {
+    padding: 100px 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8); }
+  .about-page .content-style-overlay h2, .noscroll .content-style-overlay h2, .home-page .about-page .content-style-overlay h2 {
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 3em; }
+  .about-page .content-style-overlay p, .noscroll .content-style-overlay p, .home-page .about-page .content-style-overlay p {
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 700px;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.5em; }
+  .about-page .content-style-overlay .icon-close, .noscroll .content-style-overlay .icon-close, .home-page .about-page .content-style-overlay .icon-close {
+    border: 2px solid #f9e1c9;
+    border-radius: 50%;
+    line-height: 2.8; }
+  .about-page .content-style-overlay .icon-close:hover, .noscroll .content-style-overlay .icon-close:hover, .home-page .about-page .content-style-overlay .icon-close:hover {
+    border-color: #a50a05; }
+  .about-page .content-style-text, .noscroll .content-style-text, .home-page .about-page .content-style-text {
+    padding: 60px;
+    text-align: left; }
+  .about-page .content-style-text h2, .noscroll .content-style-text h2, .home-page .about-page .content-style-text h2 {
+    margin: 0 0 0.5em 0;
+    font-weight: 300;
+    font-size: 1.85em; }
+  .about-page .content-style-text p, .noscroll .content-style-text p, .home-page .about-page .content-style-text p {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    font-size: 1.15em;
+    line-height: 1.4; }
+  .about-page .content-style-text label, .noscroll .content-style-text label, .home-page .about-page .content-style-text label {
+    padding: 10px;
+    color: #f9e1c9;
+    font-weight: bold; }
+  .about-page .content-style-text .icon-close, .noscroll .content-style-text .icon-close, .home-page .about-page .content-style-text .icon-close {
+    top: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.2); }
+  .about-page .content-style-text .icon-close:hover, .noscroll .content-style-text .icon-close:hover, .home-page .about-page .content-style-text .icon-close:hover {
+    color: #f9e1c9; }
+  .about-page .content-style-form, .noscroll .content-style-form, .home-page .about-page .content-style-form {
+    position: relative;
+    text-align: left; }
+  .about-page .content-style-form h2, .noscroll .content-style-form h2, .home-page .about-page .content-style-form h2 {
+    margin: 0;
+    padding: 0.4em 0 0.3em;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3.5em; }
+  .about-page .content-style-form form, .noscroll .content-style-form form, .home-page .about-page .content-style-form form {
+    padding: 10px 30px; }
+  .about-page .content-style-form form p, .noscroll .content-style-form form p, .home-page .about-page .content-style-form form p {
+    margin: 0 0 5px 0;
+    font-size: 0.7em; }
+  .about-page .content-style-form label, .noscroll .content-style-form label, .home-page .about-page .content-style-form label {
+    display: block;
+    padding: 10px 0 0;
+    color: #d5bba4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold; }
+  .about-page .content-style-form input[type="text"],
+  .about-page .content-style-form input[type="password"], .noscroll .content-style-form input[type="text"],
+  .noscroll .content-style-form input[type="password"], .home-page .about-page .content-style-form input[type="text"],
+  .home-page .about-page .content-style-form input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ebd3bd;
+    background: transparent;
+    color: #b09a86;
+    font-weight: 300;
+    font-size: 2.2em; }
+  .about-page .content-style-form input[type="text"]:focus,
+  .about-page .content-style-form input[type="password"]:focus, .noscroll .content-style-form input[type="text"]:focus,
+  .noscroll .content-style-form input[type="password"]:focus, .home-page .about-page .content-style-form input[type="text"]:focus,
+  .home-page .about-page .content-style-form input[type="password"]:focus {
+    border-color: #eb6a5a;
+    color: #eb6a5a; }
+  .about-page .content-style-form input:focus, .noscroll .content-style-form input:focus, .home-page .about-page .content-style-form input:focus {
+    outline: 0; }
+  .about-page .content-style-form button, .noscroll .content-style-form button, .home-page .about-page .content-style-form button {
+    display: block;
+    margin-top: 2.5em;
+    padding: 1.5em;
+    width: 100%;
+    border: none;
+    background: #eb6a5a;
+    color: #f9f6e5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 1.25em; }
+  .about-page .content-style-form .icon-close, .noscroll .content-style-form .icon-close, .home-page .about-page .content-style-form .icon-close {
+    top: 0;
+    right: 0;
+    color: #ebd3bd;
+    font-size: 75%; }
+  .about-page .content-style-form .icon-close:hover, .noscroll .content-style-form .icon-close:hover, .home-page .about-page .content-style-form .icon-close:hover {
+    color: #eb6a5a; }
+  .about-page .js .content-style-form-1 h2,
+  .about-page .js .content-style-form-1 p,
+  .about-page .js .content-style-form-1 .icon-close, .noscroll .js .content-style-form-1 h2,
+  .noscroll .js .content-style-form-1 p,
+  .noscroll .js .content-style-form-1 .icon-close, .home-page .about-page .js .content-style-form-1 h2,
+  .home-page .about-page .js .content-style-form-1 p,
+  .home-page .about-page .js .content-style-form-1 .icon-close {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s 0.35s, -webkit-transform 0.2s 0.35s;
+    transition: opacity 0.2s 0.35s, transform 0.2s 0.35s;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85); }
+  .about-page .content-style-form-1 p:first-child, .noscroll .content-style-form-1 p:first-child, .home-page .about-page .content-style-form-1 p:first-child {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s; }
+  .about-page .content-style-form-1 p:nth-child(2), .noscroll .content-style-form-1 p:nth-child(2), .home-page .about-page .content-style-form-1 p:nth-child(2) {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s; }
+  .about-page .content-style-form-1 p:nth-child(3), .noscroll .content-style-form-1 p:nth-child(3), .home-page .about-page .content-style-form-1 p:nth-child(3) {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
+  .about-page .morph-button.open .content-style-form-1 h2,
+  .about-page .morph-button.open .content-style-form-1 p,
+  .about-page .morph-button.open .content-style-form-1 .icon-close, .noscroll .morph-button.open .content-style-form-1 h2,
+  .noscroll .morph-button.open .content-style-form-1 p,
+  .noscroll .morph-button.open .content-style-form-1 .icon-close, .home-page .about-page .morph-button.open .content-style-form-1 h2,
+  .home-page .about-page .morph-button.open .content-style-form-1 p,
+  .home-page .about-page .morph-button.open .content-style-form-1 .icon-close {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  .about-page .js .content-style-form-2 h2,
+  .about-page .js .content-style-form-2 p,
+  .about-page .js .content-style-form-2 .icon-close, .noscroll .js .content-style-form-2 h2,
+  .noscroll .js .content-style-form-2 p,
+  .noscroll .js .content-style-form-2 .icon-close, .home-page .about-page .js .content-style-form-2 h2,
+  .home-page .about-page .js .content-style-form-2 p,
+  .home-page .about-page .js .content-style-form-2 .icon-close {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s 0.3s, -webkit-transform 0.2s 0.3s;
+    transition: opacity 0.2s 0.3s, transform 0.2s 0.3s;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px); }
+  .about-page .content-style-form-2 p:first-child, .noscroll .content-style-form-2 p:first-child, .home-page .about-page .content-style-form-2 p:first-child {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s; }
+  .about-page .content-style-form-2 p:nth-child(2), .noscroll .content-style-form-2 p:nth-child(2), .home-page .about-page .content-style-form-2 p:nth-child(2) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s; }
+  .about-page .content-style-form-2 p:nth-child(3), .noscroll .content-style-form-2 p:nth-child(3), .home-page .about-page .content-style-form-2 p:nth-child(3) {
+    -webkit-transition-delay: 0.45s;
+    transition-delay: 0.45s; }
+  .about-page .content-style-form-2 p:nth-child(4), .noscroll .content-style-form-2 p:nth-child(4), .home-page .about-page .content-style-form-2 p:nth-child(4) {
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
+  .about-page .morph-button.open .content-style-form-2 h2,
+  .about-page .morph-button.open .content-style-form-2 p,
+  .about-page .morph-button.open .content-style-form-2 .icon-close, .noscroll .morph-button.open .content-style-form-2 h2,
+  .noscroll .morph-button.open .content-style-form-2 p,
+  .noscroll .morph-button.open .content-style-form-2 .icon-close, .home-page .about-page .morph-button.open .content-style-form-2 h2,
+  .home-page .about-page .morph-button.open .content-style-form-2 p,
+  .home-page .about-page .morph-button.open .content-style-form-2 .icon-close {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  .about-page .content-style-form-4 form, .noscroll .content-style-form-4 form, .home-page .about-page .content-style-form-4 form {
+    padding: 30px;
+    background: #fff;
+    color: #ccb096;
+    font-size: 1.5em;
+    -webkit-perspective: 1000px;
+    perspective: 1000px; }
+  .about-page .content-style-form-4 input[type="text"], .noscroll .content-style-form-4 input[type="text"], .home-page .about-page .content-style-form-4 input[type="text"] {
+    border: none;
+    background-color: #f0f0f0; }
+  .about-page .content-style-form-4 form button, .noscroll .content-style-form-4 form button, .home-page .about-page .content-style-form-4 form button {
+    background: #ba997b; }
+  .about-page .content-style-form-4 form button:focus,
+  .about-page .content-style-form-4 form button:hover, .noscroll .content-style-form-4 form button:focus,
+  .noscroll .content-style-form-4 form button:hover, .home-page .about-page .content-style-form-4 form button:focus,
+  .home-page .about-page .content-style-form-4 form button:hover {
+    background: #a9896d; }
+  .about-page .js .content-style-form-4 p, .noscroll .js .content-style-form-4 p, .home-page .about-page .js .content-style-form-4 p {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: rotateX(-45deg);
+    transform: rotateX(-45deg);
+    -webkit-transform-origin: center top;
+    transform-origin: center top; }
+  .about-page .morph-button.open .content-style-form-4 p, .noscroll .morph-button.open .content-style-form-4 p, .home-page .about-page .morph-button.open .content-style-form-4 p {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.4s 0.2s;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  .about-page .morph-button.open .content-style-form-4 p:nth-child(2), .noscroll .morph-button.open .content-style-form-4 p:nth-child(2), .home-page .about-page .morph-button.open .content-style-form-4 p:nth-child(2) {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s; }
+  .about-page .content-style-social, .noscroll .content-style-social, .home-page .about-page .content-style-social {
+    padding: 30px;
+    text-align: left; }
+  .about-page .morph-button-inflow-2 > button svg, .noscroll .morph-button-inflow-2 > button svg, .home-page .about-page .morph-button-inflow-2 > button svg {
+    display: inline-block;
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: -5%; }
+  .about-page .morph-button-inflow-2 > button svg path, .noscroll .morph-button-inflow-2 > button svg path, .home-page .about-page .morph-button-inflow-2 > button svg path {
+    fill: #eb6a5a; }
+  .about-page .content-style-social a, .noscroll .content-style-social a, .home-page .about-page .content-style-social a {
+    display: block;
+    padding: 0.5em 0;
+    color: #67c2d4;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 32px; }
+  .about-page .js .content-style-social a, .noscroll .js .content-style-social a, .home-page .about-page .js .content-style-social a {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  .about-page .content-style-social a:hover, .noscroll .content-style-social a:hover, .home-page .about-page .content-style-social a:hover {
+    color: #eb6a5a; }
+  .about-page .content-style-social a:hover svg path, .noscroll .content-style-social a:hover svg path, .home-page .about-page .content-style-social a:hover svg path {
+    fill: #eb6a5a; }
+  .about-page .content-style-social a svg, .noscroll .content-style-social a svg, .home-page .about-page .content-style-social a svg {
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: middle;
+    -webkit-backface-visibility: hidden; }
+  .about-page .morph-button-inflow.open .content-style-social a, .noscroll .morph-button-inflow.open .content-style-social a, .home-page .about-page .morph-button-inflow.open .content-style-social a {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  .about-page .morph-button-inflow.open .content-style-social a:nth-child(2), .noscroll .morph-button-inflow.open .content-style-social a:nth-child(2), .home-page .about-page .morph-button-inflow.open .content-style-social a:nth-child(2) {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s; }
+  .about-page .morph-button-inflow.open .content-style-social a:nth-child(3), .noscroll .morph-button-inflow.open .content-style-social a:nth-child(3), .home-page .about-page .morph-button-inflow.open .content-style-social a:nth-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s; }
+  .about-page .content-style-video, .noscroll .content-style-video, .home-page .about-page .content-style-video {
+    text-align: left; }
+  .about-page .video-mockup, .noscroll .video-mockup, .home-page .about-page .video-mockup {
+    width: 640px;
+    height: 360px;
+    max-width: 100%;
+    background: url(/img/rated.png) no-repeat center center;
+    background-size: 100%; }
+  .about-page .content-style-video .icon-close,
+  .about-page .content-style-video .icon-pause, .noscroll .content-style-video .icon-close,
+  .noscroll .content-style-video .icon-pause, .home-page .about-page .content-style-video .icon-close,
+  .home-page .about-page .content-style-video .icon-pause {
+    color: #286f81; }
+  .about-page .content-style-video .icon-close, .noscroll .content-style-video .icon-close, .home-page .about-page .content-style-video .icon-close {
+    top: 0;
+    right: 0; }
+  .about-page .content-style-video .icon-close:hover, .noscroll .content-style-video .icon-close:hover, .home-page .about-page .content-style-video .icon-close:hover {
+    color: rgba(0, 0, 0, 0.4); }
+  .about-page .controls, .noscroll .controls, .home-page .about-page .controls {
+    bottom: 0px;
+    left: 0px;
+    width: 100%; }
+  .about-page .js .controls, .noscroll .js .controls, .home-page .about-page .js .controls {
+    position: absolute; }
+  .about-page .controls span, .noscroll .controls span, .home-page .about-page .controls span {
+    display: inline-block; }
+  .about-page .content-style-video .icon-pause, .noscroll .content-style-video .icon-pause, .home-page .about-page .content-style-video .icon-pause {
+    overflow: hidden;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    line-height: 2.5;
+    cursor: pointer;
+    vertical-align: bottom; }
+  .about-page .content-style-video span.time, .noscroll .content-style-video span.time, .home-page .about-page .content-style-video span.time {
+    color: #286f81;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 40px; }
+  .about-page .controls::after, .noscroll .controls::after, .home-page .about-page .controls::after {
+    content: '';
+    position: absolute;
+    height: 7px;
+    left: 100px;
+    right: 70px;
+    bottom: 16px;
+    background: #aaa; }
+  .about-page .content-style-sidebar h2, .noscroll .content-style-sidebar h2, .home-page .about-page .content-style-sidebar h2 {
+    font-weight: 300;
+    font-size: 2em;
+    padding: 0.75em 0 0.75em 1em;
+    margin: 0;
+    color: #bb4445; }
+  .about-page .content-style-sidebar .icon-close, .noscroll .content-style-sidebar .icon-close, .home-page .about-page .content-style-sidebar .icon-close {
+    top: 0;
+    right: 0;
+    font-size: 0.85em; }
+  .about-page .content-style-sidebar ul, .noscroll .content-style-sidebar ul, .home-page .about-page .content-style-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .about-page .content-style-sidebar ul li a, .noscroll .content-style-sidebar ul li a, .home-page .about-page .content-style-sidebar ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #faf1e0;
+    font-weight: 400;
+    font-size: 1.05em;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.1); }
+  .about-page .content-style-sidebar ul li:last-child a, .noscroll .content-style-sidebar ul li:last-child a, .home-page .about-page .content-style-sidebar ul li:last-child a {
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 0 -1px rgba(0, 0, 0, 0.1); }
+  .about-page .content-style-sidebar ul li a:hover, .noscroll .content-style-sidebar ul li a:hover, .home-page .about-page .content-style-sidebar ul li a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: none; }
+  .about-page .content-style-sidebar ul .icon::before, .noscroll .content-style-sidebar ul .icon::before, .home-page .about-page .content-style-sidebar ul .icon::before {
+    display: inline-block;
+    width: auto;
+    margin-right: 20px;
+    font-size: 1.5em;
+    vertical-align: -10%;
+    color: rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 770px) {
+    .about-page .content-style-overlay, .noscroll .content-style-overlay, .home-page .about-page .content-style-overlay {
+      font-size: 75%; }
+    .about-page .content-style-overlay .icon-close, .noscroll .content-style-overlay .icon-close, .home-page .about-page .content-style-overlay .icon-close {
+      top: 5px;
+      right: 5px; } }
+
+/*# sourceMappingURL=about.css.map */

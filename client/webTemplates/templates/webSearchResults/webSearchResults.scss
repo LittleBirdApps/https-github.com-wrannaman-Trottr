@@ -1,0 +1,101 @@
+.webSearch-page, .webSearchResults-page {
+  margin-top: 3%;
+  height: 100%;
+
+  .ak_btn_mini { 
+    color: #eb6a5a !important;
+    background: #fff !important;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px; 
+    // background:url('/img/btn_bg.png') repeat-x 0 0;
+    box-shadow: 1px 1px 2px #ccc; 
+    text-align:center; 
+    display:inline-block;  
+    padding:11px 17px; 
+    font-family: 'Raleway';
+    font-size: 14px !important;
+    font-weight: normal !important; letter-spacing:1px;
+    position: absolute;
+    width: 120px;
+    height: 53px;
+    content: "";
+    right: 5px;
+    top: 25px;
+    background-size: 100px 48px;
+  }
+  .walker_cont {
+    padding: 21px 10px 22px 10px;
+    margin: 0;
+  }
+  .walker_cont > ul {
+    margin: 0;
+    padding: 0;
+  }
+  .walker_cont > ul > li {
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+  }
+  .walker_cont > ul > li:after {
+    // position: absolute;
+    // width: 100px;
+    // height: 53px;
+    // content: "";
+    // right: 5px;
+    // top: 15px;
+    // background: url('/img/book_button.png') no-repeat right 5px;
+    // background-size: 100px 48px;
+  }
+  .walker_cont > ul > li .article {
+    display: block;
+    padding: 7px 5px 8px 5px;
+    margin: 0;
+  }
+  .walkerList_cont{ border:solid 1px #eae2e2; border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;overflow:hidden; margin:5px; box-shadow:0px 1px 2px #ccc;}
+
+  .walkerList{ margin:0; padding:0;
+    background:#fffcfc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #fffffe /*{a-bar-background-start}*/), to( #fffcfc /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #fffffe /*{a-bar-background-start}*/, #fffcfc /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient( #fffffe /*{a-bar-background-start}*/, #fffcfc /*{a-bar-background-end}*/); /* FF3.6 */
+    background-image:     -ms-linear-gradient( #fffffe /*{a-bar-background-start}*/, #fffcfc /*{a-bar-background-end}*/); /* IE10 */
+    background-image:      -o-linear-gradient( #fffffe /*{a-bar-background-start}*/, #fffcfc /*{a-bar-background-end}*/); /* Opera 11.10+ */
+    background-image:         linear-gradient( #fffffe /*{a-bar-background-start}*/, #fffcfc /*{a-bar-background-end}*/);
+
+  }
+
+  .walkerList > h3{ margin:0 16px; padding:0; font-size:36px; color:#eb6a5a; border-bottom:solid 1px #e3e4e6; font-weight:normal; text-align:center;}
+  .walkerList ul{ margin:0; padding:0 15px;}
+  .walkerList ul li{ list-style:none; margin:0px 0 0 0; padding:10px 0;}
+  .walkerList ul li:first-child{ margin:0;}
+  .walkerList ul li .listdatetime{ float:left; margin:0 8px 0 0; padding:4px 0 0 0; font-size:15px; letter-spacing:1px;}
+  .walker_cont > ul > li .article{ display:block; padding:7px 5px 8px 5px; margin:0;}
+
+  .pro_pic{ float:left; width:155px; height:155px; float:left;}
+  .pro_pic img{ width:100%; height:100%;}
+  .pro_detail{ float:left; padding:0 0 0 10px; width:87%; max-width:2000px;}
+  .pro_detail h4{ font-size:18px; color:#eb6a5a; padding:0 0 2px 0; margin:0; letter-spacing:2px;font-family: 'Raleway';}
+  .pro_detail p{ font-size:14px; color:#666; line-height:11px; padding:0; margin:0;letter-spacing:1px;font-family: 'Raleway';letter-spacing: 1px;}
+
+  .clr{ clear:both;}
+
+  .art_link{ width:100%; height:28px; background:#f8f9f9; border-top:solid 1px #f2f3f4;}
+
+  .art_link ul{ margin:0; padding:0;}
+  .art_link ul{ margin:0; padding:0;}
+  .art_link ul li{ margin:0; padding:3px 0 0 0; list-style:none; width:24%; float:left; }
+
+  .art_link ul li a{ font-size:12px; color:#65707a; display:block; margin-top:3px; min-height: 20px  }
+
+  .post_call{ background:url('/img/call_icon.png') no-repeat 0 0; background-size:17px 16px; padding:4px 0 1px 22px;margin-left:10px;}
+  .post_chat{ background:url('/img/post_chat_icon.png') no-repeat 0 3px; background-size:18px 17px; padding:4px 0 0 19px;margin-left:10px;}
+  .post_star{ background:url('/img/post_star_icon.png') no-repeat 0 2px; background-size:18px 18px; padding:4px 0 0px 16px;margin-left:10px;}
+  .post_location{ background:url('/img/post_location_icon.png') no-repeat 0 5px; background-size:12px 17px; padding:4px 0 0px 13px}
+}

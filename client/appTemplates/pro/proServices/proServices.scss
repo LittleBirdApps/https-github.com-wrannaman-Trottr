@@ -1,0 +1,22 @@
+.proServices-page {
+  color: #505050;
+  height:1000px;
+  text-align: center;
+  max-width: 91%;
+  margin-left: 4%;
+
+  
+  .inv_pay{ width:80%; margin:0 auto; padding:0;}
+  .ak_btn{ height:42px; line-height:42px; color:#fff !important; background:#eb6a5a;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px; background:url(/img/btn_bg.png) repeat-x 0 0; width:100%;box-shadow: 1px 1px 2px #ccc; text-align:center; display:block; font-weight:normal !important; font-size:16px !important; font-family: 'Raleway'; letter-spacing:1px;}
+  .akinput{background:#fff; border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;box-shadow: 1px 1px 2px #ccc; height:42px; width:100%;}
+  .akinput input[type="text"], .akinput input[type="password"], .akinput input[type="email"], .akinput input[type="tel"], .akinput input[type="number"]{ background:none; border:none; margin:0; padding: 0.8em 0 0 !important; font-size:16px; color:#65707a;}
+  .akinput .ui-shadow-inset, .aktxarea .ui-shadow-inset{ box-shadow:none;}
+  .akinput div.ui-input-text, .aktxarea div.ui-input-text{ margin:0;}
+  .ak_btn_mini{ color:#fff !important; background:#eb6a5a;border-radius:5px;-moz-border-radius:5px;
+    -webkit-border-radius:5px; background:url(/img/btn_bg.png) repeat-x 0 0;box-shadow: 1px 1px 2px #ccc;
+    text-align:center; display:inline-block;  padding:11px 17px;
+    font-family: 'Raleway';
+    font-size: 14px !important;
+    font-weight: normal !important; letter-spacing:1px;}
+
+}

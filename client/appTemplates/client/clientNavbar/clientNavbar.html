@@ -1,0 +1,57 @@
+<template name="clientNavbar">
+    <div class="clientNavbar" style="height:100%; min-height:500px;font-size:19px;">
+        <div id="st-container" class="st-container">
+            <!--
+                example menus
+                these menus will be on top of the push wrapper
+            -->
+
+
+            <nav class="st-menu st-effect-2" id="menu-2">
+                <h2 class="" style="margin-left: 62px; margin-top: 5px;margin-bottom: 5px; padding:0;">
+                    <img src="/img/panel_logo_white.png" style="width: 150px;">
+                </h2>
+                <ul>
+                    <!-- <li><a class="icon icon-shop" href="/clientHome">Home</a></li> -->
+                    <li><a class="icon ion-ios-paw-outline" href="/findWalker">Find A Walker</a></li>
+                    <li><a class="icon ion-ios-calendar-outline" href="/clientCalendar">Calendar</a></li>
+                    <li><a class="icon ion-ios-list-outline" href="/clientCalendarList">Calendar List</a></li>
+                    <li><a class="icon ion-ios-gear-outline" href="/clientProfile">Profile</a></li>
+                    <li><a class="icon ion-clipboard" href="/clientHistory">Invoices</a></li>
+                    <li><a class="icon ion-ios-heart-outline" href="/clientProfile">Share</a></li>
+                    <li><a class="icon ion-ios-information-outline" href="/faq">Help</a></li>
+                    <li><a class="icon ion-ios-chatbubble-outline" id="chat" href="/clientChat">Chat</a></li>
+                    <li><a class="icon ion-log-out" id="logout" href="/">Logout</a></li>
+                    
+                </ul>
+            </nav>
+
+            <!-- content push wrapper -->
+            <div class="st-pusher">
+                <!--
+                    example menus
+                    these menus will be under the push wrapper
+                -->
+
+
+                <div class="st-content"><!-- this is the wrapper for the content -->
+                    <div class="st-content-inner" ><!-- extra div for emulating position:fixed of the menu -->
+                        <!-- Top Navigation -->
+                        <div class="main clearfix" style="position:relative;z-index:50000;">
+                            <div id="st-trigger-effects" class="column">
+                                <button class="noButton" data-effect="st-effect-2"><img src="/img/menu_icon.png"></button>
+                                 <h2 style="text-align:center;">{{page}}</h2>
+                            </div>
+
+                        </div><!-- /main -->
+                        <div class="{{currentRouteName}}-page">
+                            {{> yield}}
+                        </div>
+
+                    </div><!-- /st-content-inner -->
+                </div><!-- /st-content -->
+            </div><!-- /st-pusher -->
+        </div><!-- /st-container -->
+    </div>
+</template>
+

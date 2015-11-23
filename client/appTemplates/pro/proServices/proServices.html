@@ -1,0 +1,66 @@
+
+<template name="proServices">
+    <div class="row">
+        <div class="" syle='width:90%;text-align:center;'>
+            
+            <h4>
+                Enter Your services with their title (as they appear to your clients), the length of time in minutes, and 
+                the price you charge. <br>You will be able to change or add to your services at any time by clicking on 'Services' in the nav bar. 
+            </h4>
+            <div class="inv_pay" id="showModal" disabled="false">
+                <a class="ak_btn_mini" >Add A Service</a>
+            </div>
+
+            {{#each service}}
+            <h3>
+            Service {{num}} <a href="#" id="delete{{num}}"><img style="width:35px;height:32px;" src="/img/delete_btn.png"></a>
+            </h3>
+            <h4 class="white"><label>Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input id="title{{num}}" type="text" value="{{title}}" /></h4>
+            <h4 class="white"><label>Price&nbsp;&nbsp;&nbsp;&nbsp;</label> <input id="price{{num}}" type="text" value="{{price}}" /></h4>
+            <h4 class="white"><label>Length&nbsp;</label> <input id="length{{num}}" type="text" value="{{length}}" /></h4>
+            {{/each}}
+
+            <div class="inv_pay" id="save" disabled="false">
+                <a class="ak_btn">Save</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="proServicesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Add A Service!</h4>
+
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">Title</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="titlem" placeholder="Title">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">Price</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="pricem" placeholder="Price">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">Length</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="lengthm" placeholder="Length">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="closeRecurring">Close</button>
+                    <button type="button" class="btn btn-primary" id="addService">Add Service</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

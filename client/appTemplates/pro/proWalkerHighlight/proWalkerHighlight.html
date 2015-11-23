@@ -1,0 +1,57 @@
+<template name="proWalkerHighlight">
+    <div data-role="content" class="nopad">
+        <div class="schedule_cont">
+            <div class="schedule_box">
+                <div class="user_pic">
+                    <img id="userPic" src="{{pic}}" alt="">
+                </div>
+                <div class="user_schedule">
+                    <h3>This Week's Schedule</h3>
+                    <ul id="availScheduleList">
+                        <li><label>Mon:</label><span>{{monStart}} to {{monEnd}}</span></li>
+                        <li><label>Tue:</label><span>{{tueStart}} to {{tueEnd}}</span></li>
+                        <li><label>Wed:</label><span>{{wedStart}} to {{wedEnd}}</span></li>
+                        <li><label>Thu:</label><span>{{thsStart}} to {{thsEnd}}</span></li>
+                        <li><label>Fri:</label><span>{{friStart}} to {{friEnd}}</span></li>
+                        <li><label>Sat:</label><span>{{satStart}} to {{satEnd}}</span></li>
+                        <li><label>Sun:</label><span>{{sunStart}} to {{sunEnd}}</span></li>
+
+                    </ul>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+            <div class="rate_bar">
+                <ul>
+                    <li><a href="#" id="walkerRating">5.0 Rating</a></li>
+                    <li><a href="#" id="walkerDistance">.5 Miles Away</a></li>
+                    <li><a href="{{phone}}" id="walkerPhone">Call</a></li>
+                    
+                </ul>
+            </div><!-- /rat Bar End -->
+            <div class="ragister_cont2" style="padding-top:15px !important">
+                <div class="notice_box">
+                    <h4 id="walkerName">{{name}}</h4>
+                    <p id="walkerAbout">{{about}}</p>
+                </div>
+            </div>
+            <div id ="scheduleWalker" class="schedule_btn">
+                <a class="ak_btn ui-link" href='/proEmployee'>Back</a>
+            </div>
+        </div>
+        <!--<div data-role="popup" id="chatPopup" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all">-->
+            <!--<a  data-role="button" data-theme="no" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>-->
+            <!--<h2>Send Chat Message</h2>-->
+            <!--<div class="registration_form_cont3 ak_popcontainer">-->
+                <!--<div class="login_row">-->
+                    <!--<div class="aktxarea">-->
+                        <!--<textarea id="txtMsg" data-theme="no" placeholder="Enter Message" style="height: 100px !important;"></textarea>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="login_row">-->
+                    <!--<a  class="ak_btn">Send</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div><!-- /content -->
+</template>

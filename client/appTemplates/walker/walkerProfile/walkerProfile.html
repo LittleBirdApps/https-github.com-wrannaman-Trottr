@@ -1,0 +1,146 @@
+
+<template name="walkerProfile">
+    <div class="profilecontainer" style="">
+      <div class="row">
+        <div class="col-xs-3">
+        </div>
+        <div class="col-xs-3">
+          <div class="profilepic">
+          <div class="profileimg">
+            <img src="{{pic}}"/>
+          </div>
+          <i class="icon-plus"></i>
+          <i class="icon-ok"></i>
+          </div>
+        </div>
+        <div class="col-xs-3">
+        {{> s3_tester}}
+        </div>
+        <div class="col-xs-3">
+        
+        </div>
+      </div>
+    
+
+
+<h3 style="text-align:center !important;">Profile Info</h3>
+            <div class="row">
+            <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white" ><label>Name</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="name" type="text" value="{{name}}" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white" ><label>Phone</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="phone"   type="text" value="{{phone}}" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white" ><label>Email</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="email" type="text" value="{{email}}" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white"  ><label>Address</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="address" type="text" value="{{address}}"/>
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white" ><label>Radius</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="radius"  type="text" value="{{radius}}"/>
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white" ><label>About</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="about"  type="text" value="{{about}}"/>
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+
+            {{#if notProEmployee}}
+            
+            <h3 style="text-align:center !important;">Direct Deposit</h3>
+                <div class="row">
+                <div class="col-xs-3">
+                </div>
+              <div class="col-xs-3" >
+                    <h4 class="white"  ><label>Account Number</label></h4>
+              </div>
+              <div class="col-xs-3">
+                  <input id="account"   type="number" value="{{account}}" />
+              </div>
+              <div class="col-xs-3">
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-xs-3">
+            </div>
+              <div class="col-xs-3">
+                    <h4 class="white"  ><label>Routing Number</label></h4>
+              </div>
+              <div class="col-xs-3">
+                  <input id="routing"  type="number" value="{{routing}}"/>
+              </div>
+              <div class="col-xs-3">
+              </div>
+            </div>     
+            {{/if}}
+           <div class="ak_btn" id="save" style="text-align:center;margin-left:25%;"> 
+                Save 
+           </div>
+        </div>
+</template>
+
+<template name="s3_tester">
+    <div  class="row" style="text-align:center !important;">
+       <label class='uploadbtn' style="display:inline; margin-top:15px; width:100px; background-color:#eb6a5a; border-color:none;">
+            Choose a file... <input style="" type="file" class="file_bag hidden">
+        </label>
+    </div>
+    <div  class="row" style="text-align:center !important;">
+        <button style="background-color:#eb6a5a;margin-left:15px;margin-top:15px;border-color:none !important;" class="upload btn btn-primary btn-lg">Upload</button>
+        {{#each files}}
+            <p id="uploadPercent">{{percent_uploaded}}</p>
+        {{/each}}
+    </div>
+</template>

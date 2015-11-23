@@ -1,0 +1,331 @@
+@charset "UTF-8";
+.proChat-page {
+  height: 1000px;
+  	/* 
+    HTML implementation of a Hip Chat redesign based on Jan Dvořák Dribbble shot.
+    https://dribbble.com/shots/1529065-HipChat-Redesign
+  */
+  /* HTML5 display-role reset for older browsers */ }
+  .proChat-page html, .proChat-page body, .proChat-page div, .proChat-page span, .proChat-page applet, .proChat-page object, .proChat-page iframe,
+  .proChat-page h1, .proChat-page h2, .proChat-page h3, .proChat-page h4, .proChat-page h5, .proChat-page h6, .proChat-page p, .proChat-page blockquote, .proChat-page pre,
+  .proChat-page a, .proChat-page abbr, .proChat-page acronym, .proChat-page address, .proChat-page big, .proChat-page cite, .proChat-page code,
+  .proChat-page del, .proChat-page dfn, .proChat-page em, .proChat-page img, .proChat-page ins, .proChat-page kbd, .proChat-page q, .proChat-page s, .proChat-page samp,
+  .proChat-page small, .proChat-page strike, .proChat-page strong, .proChat-page sub, .proChat-page sup, .proChat-page tt, .proChat-page var,
+  .proChat-page b, .proChat-page u, .proChat-page i, .proChat-page center,
+  .proChat-page dl, .proChat-page dt, .proChat-page dd, .proChat-page ol, .proChat-page ul, .proChat-page li,
+  .proChat-page fieldset, .proChat-page form, .proChat-page label, .proChat-page legend,
+  .proChat-page table, .proChat-page caption, .proChat-page tbody, .proChat-page tfoot, .proChat-page thead, .proChat-page tr, .proChat-page th, .proChat-page td,
+  .proChat-page article, .proChat-page aside, .proChat-page canvas, .proChat-page details, .proChat-page embed,
+  .proChat-page figure, .proChat-page figcaption, .proChat-page footer, .proChat-page header, .proChat-page hgroup,
+  .proChat-page menu, .proChat-page nav, .proChat-page output, .proChat-page ruby, .proChat-page section, .proChat-page summary,
+  .proChat-page time, .proChat-page mark, .proChat-page audio, .proChat-page video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline; }
+  .proChat-page article, .proChat-page aside, .proChat-page details, .proChat-page figcaption, .proChat-page figure,
+  .proChat-page footer, .proChat-page header, .proChat-page hgroup, .proChat-page menu, .proChat-page nav, .proChat-page section {
+    display: block; }
+  .proChat-page body {
+    line-height: 1; }
+  .proChat-page ol, .proChat-page ul {
+    list-style: none; }
+  .proChat-page blockquote, .proChat-page q {
+    quotes: none; }
+  .proChat-page blockquote:before, .proChat-page blockquote:after,
+  .proChat-page q:before, .proChat-page q:after {
+    content: '';
+    content: none; }
+  .proChat-page table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .proChat-page body {
+    background: url(http://www.vauls.com/img/3.jpg) #a9b89e;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+    color: #333f4d; }
+  .proChat-page b {
+    font-weight: bold; }
+  .proChat-page .window-wrapper {
+    background: #fff;
+    width: 780px;
+    margin: 30px auto;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    min-height: 530px;
+    position: relative; }
+  .proChat-page .window-title {
+    padding: 14px;
+    position: relative; }
+  .proChat-page .dots {
+    float: left;
+    width: 50px; }
+  .proChat-page .window-title > .title {
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold; }
+  .proChat-page .window-title > .expand {
+    position: absolute;
+    right: 14px;
+    top: 12px; }
+  .proChat-page .dots > i {
+    margin-right: 2px; }
+  .proChat-page .dots > i:nth-child(1) {
+    color: #f57e7d; }
+  .proChat-page .dots > i:nth-child(2) {
+    color: #ffc881; }
+  .proChat-page .dots > i:nth-child(3) {
+    color: #82cf85; }
+  .proChat-page .expand > i {
+    color: #cfd6e0;
+    font-size: 18px;
+    cursor: pointer; }
+  .proChat-page .window-area {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 176px; }
+  .proChat-page .conversation-list {
+    width: 176px;
+    background: #505d71;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0; }
+  .proChat-page .conversation-list ul li a {
+    padding: 15px;
+    color: #bcc3d0;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    border-bottom: 2px solid #586476; }
+  .proChat-page .conversation-list ul li a:hover,
+  .proChat-page .conversation-list ul li.active a {
+    background: #445166;
+    color: #fff; }
+  .proChat-page .conversation-list ul li a i {
+    color: #79889d;
+    font-size: 1.2em; }
+  .proChat-page .conversation-list ul li a span {
+    display: inline-block;
+    margin-left: 14px; }
+  .proChat-page .conversation-list ul li a i.fa-times {
+    position: absolute;
+    top: 19px;
+    right: 21px;
+    font-size: 10px; }
+  .proChat-page .conversation-list .online {
+    color: #82cf85; }
+  .proChat-page .conversation-list .idle {
+    color: #ffac69; }
+  .proChat-page .conversation-list .offline {
+    color: #f57e7d; }
+  .proChat-page .chat-area {
+    border-top: 1px solid #cfdae1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    left: 176px;
+    right: 175px;
+    box-shadow: inset 0 1px 3px rgba(207, 218, 225, 0.42); }
+  .proChat-page .chat-area .title {
+    padding: 10px;
+    overflow: hidden;
+    line-height: 15px; }
+  .proChat-page .chat-area .title .fa-search {
+    font-size: 14px;
+    float: right;
+    color: #a8bbc6;
+    cursor: pointer; }
+  .proChat-page .chat-area .chat-list {
+    border-top: 1px solid #cfdae1;
+    border-bottom: 1px solid #cfdae1;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    right: 0;
+    bottom: 44px;
+    overflow-y: auto;
+    outline: none; }
+  .proChat-page .chat-area ul {
+    margin-right: -4px; }
+  .proChat-page .chat-area ul > li {
+    border-top: 1px solid #cfdae1;
+    overflow: hidden;
+    position: relative; }
+  .proChat-page .chat-area ul > li.me {
+    background: #e4eaee; }
+  .proChat-page .chat-area ul > li:first-child {
+    border-top: none; }
+  .proChat-page .chat-area ul .name {
+    padding: 14px;
+    text-align: right;
+    width: 100px;
+    float: left;
+    color: #5d7185;
+    font-weight: bold;
+    line-height: 20px; }
+  .proChat-page .chat-area ul .message {
+    padding: 14px;
+    border-left: 1px solid #cfdae1;
+    float: left;
+    color: #333f4d;
+    width: 64%; }
+  .proChat-page .chat-area ul .message > p {
+    line-height: 20px; }
+  .proChat-page .chat-area ul .message > p > .blue-label {
+    background: #6ea0ff;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px; }
+  .proChat-page .chat-area ul .message .msg-time {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    color: #738ba3;
+    font-size: 9px; }
+  .proChat-page .input-area {
+    background: #e4eaee;
+    padding: 6px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #cfdae1; }
+  .proChat-page .input-area .input-wrapper {
+    background: #fff;
+    border: 1px solid #cfdae1;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    width: 64%;
+    margin-right: 14px; }
+  .proChat-page .input-area .input-wrapper input {
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    margin: 0;
+    padding: 0 10px;
+    outline: none;
+    color: #5D7185;
+    min-width: 271px; }
+  .proChat-page .input-area .input-wrapper i {
+    font-size: 18px;
+    color: #a0b4c0;
+    margin-right: 10px;
+    cursor: pointer; }
+  .proChat-page .input-area > input {
+    background: #a0b4c0;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-family: 'Raleway', Arial, sans-serif;
+    outline: none; }
+  .proChat-page .right-tabs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-left: 1px solid #cfdae1;
+    border-top: 1px solid #cfdae1;
+    width: 175px; }
+  .proChat-page .right-tabs > ul.tabs {
+    overflow: hidden; }
+  .proChat-page .right-tabs > ul.tabs > li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    border-bottom: 1px solid #cfdae1; }
+  .proChat-page .right-tabs > ul.tabs > li > a {
+    border-left: 1px solid #cfdae1;
+    color: #72a3ff;
+    display: block;
+    background: #eef2f8;
+    padding: 8px 0; }
+  .proChat-page .right-tabs > ul.tabs > li.active {
+    border-bottom: none; }
+  .proChat-page .right-tabs > ul.tabs > li.active > a {
+    background: #fff;
+    color: #c3ccd3; }
+  .proChat-page .right-tabs > ul.tabs > li:first-child > a {
+    border-left: none; }
+  .proChat-page .right-tabs > ul.tabs > li > a > i {
+    font-size: 18px; }
+  .proChat-page ul.tabs-container {
+    padding: 10px;
+    color: #6e7f91; }
+  .proChat-page .right-tabs > .fa-cog {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    color: #a0b4c0;
+    font-size: 18px;
+    cursor: pointer; }
+  .proChat-page .member-list > li {
+    padding: 5px 0; }
+  .proChat-page .member-list > li .status {
+    margin: 0 10px 0 0;
+    font-size: 14px; }
+  .proChat-page .member-list > li .status.online {
+    color: #82cf85; }
+  .proChat-page .member-list > li .status.idle {
+    color: #ffac69; }
+  .proChat-page .member-list > li .status.offline {
+    color: #f57e7d; }
+  .proChat-page .member-list > li .time {
+    float: right;
+    font-size: 9px;
+    margin-top: 4px; }
+  .proChat-page .my-account {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 29px;
+    padding: 8px;
+    background: #445166; }
+  .proChat-page .my-account > .image {
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: relative; }
+  .proChat-page .my-account > .image > i {
+    position: absolute;
+    top: -2px;
+    right: -2px; }
+  .proChat-page .my-account > .image > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px; }
+  .proChat-page .my-account > .name {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    float: left;
+    cursor: pointer; }
+  .proChat-page .my-account > .name .availability {
+    display: block;
+    font-weight: normal;
+    color: #8391a1;
+    margin-top: 5px; }
+  .proChat-page .jspDrag {
+    background: #A1AFC4;
+    border-radius: 10px; }
+  .proChat-page .jspVerticalBar {
+    width: 7px; }
+
+/*# sourceMappingURL=proChat.css.map */

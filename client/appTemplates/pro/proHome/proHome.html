@@ -1,0 +1,57 @@
+<template name="proHome">
+{{#if configured}}
+            <div class="grid">
+                <figure class="effect-roxy">
+                    {{> revenue}}
+                </figure>
+                <figure class="effect-roxy">
+                    {{> clients}}
+                </figure>
+                <figure class="effect-roxy">
+                    {{> walks}}
+                </figure>     
+                <figure class="effect-roxy">
+                    {{> newClients}}
+                </figure>  
+                <figure class="effect-roxy">
+                    {{> avgReview}}
+                </figure> 
+            </div>
+{{else}}
+{{> proTabs}}
+{{/if}}
+</template>
+
+<template name="revenue">
+    <div class="grid">
+        <h1>Revenue</h1>
+        <canvas id="revenue" width="300" height="300"></canvas>
+    </div>
+</template>
+
+<template name="clients">
+    <div class="grid">
+        <h1>Clients</h1>
+        <canvas id="clients" width="300" height="300"></canvas>
+    </div>
+</template>
+
+<template name="walks">
+    <div class="grid">
+        <h1>Walks</h1>
+        <canvas id="walks" width="300" height="300"></canvas>
+    </div>
+</template>
+<template name="newClients">
+    <div class="grid">
+        <h1>New Clients</h1>
+        <canvas id="newClients" width="300" height="300"></canvas>
+    </div>
+</template>
+<template name="avgReview">
+    <div class="grid">
+        <h1>Reviews</h1>
+        <canvas id="avgReview" width="300" height="300"></canvas>
+    </div>
+</template>
+

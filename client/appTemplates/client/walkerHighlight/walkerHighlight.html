@@ -1,0 +1,60 @@
+<template name="walkerHighlight">
+    <div data-role="content" class="nopad">
+        <div class="schedule_cont">
+            <div class="row">
+                        <div class="col col-xs-2">
+                        </div>
+                        <div class="col col-xs-2">
+                            <img id="userPic" src="{{pic}}" alt="" style="-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);margin-top: 30px;border-radius: 10px;width:250px !important;">
+                        </div>
+                        <div class="col col-xs-2">
+                        </div>
+                        <div class="col col-xs-3">
+                            <div class="">
+                                <h3>Schedule</h3>
+                                <p>This Week</p>
+                                <ul id="availScheduleList" style="">
+                                    <li><label>Mon:</label><span>{{monStart}} to {{monEnd}}</span></li>
+                                    <li><label>Tue:</label><span>{{tueStart}} to {{tueEnd}}</span></li>
+                                    <li><label>Wed:</label><span>{{wedStart}} to {{wedEnd}}</span></li>
+                                    <li><label>Thu:</label><span>{{thsStart}} to {{thsEnd}}</span></li>
+                                    <li><label>Fri:</label><span>{{friStart}} to {{friEnd}}</span></li>
+                                    <li><label>Sat:</label><span>{{satStart}} to {{satEnd}}</span></li>
+                                    <li><label>Sun:</label><span>{{sunStart}} to {{sunEnd}}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col col-xs-3" id="serviceList">
+                            <div class="">
+                                <h3>Services</h3>
+                                
+                                <ul id="availScheduleList">
+                                    {{#each service}}
+                                    <li><label>{{title}}:&nbsp;</label><span>${{price}}</span></li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="rate_bar">
+                <ul>
+                    <li><a href="#" id="walkerRating">5.0 Rating</a></li>
+                    <li><a href="#" id="walkerDistance">.5 Miles Away</a></li>
+                    <li><a href="{{phone}}" id="walkerPhone">Call</a></li>
+                    <li><a href="" id="walkerChat">Chat</a></li>
+                </ul>
+            </div><!-- /rat Bar End -->
+            <div class="ragister_cont2" style="padding-top:15px !important">
+                <div class="notice_box">
+                    <h4 id="walkerName">{{name}}</h4>
+                    <p id="walkerAbout">{{about}}</p>
+                </div>
+            </div>
+            <div id ="scheduleWalker" class="schedule_btn">
+                <a class="ak_btn ui-link">Schedule This Walker</a>
+            </div>
+    </div><!-- /content -->
+     <div>{{> clientChatMini}}</div>
+</template>

@@ -1,0 +1,45 @@
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons.scss';   // had to use ionicons sass package. 
+html, body {
+  font-family: 'proxima_novalight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+nav {
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+  -moz-box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+  -ms-box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+  -o-box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+}
+.navbar-default {
+  background-color: #fff;
+}
+
+.nav {
+  color: #eb6a5a;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #eb6a5a;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #eb6a5a;
+}
+
+.navbar-brand > img {
+  display: block;
+  width: 150px;
+}
+
+@media (min-width: 768px){
+  .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-top: -8px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: right;
+  }
+}

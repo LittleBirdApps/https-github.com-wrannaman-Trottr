@@ -1,0 +1,17 @@
+<template name="webSearch">
+    <div class="container">
+        <div id="morphsearch" class="morphsearch open">
+
+            <form class="morphsearch-form" >
+                <input class="morphsearch-input" type="search" placeholder="Find A Walker..."/>
+                <button class="morphsearch-submit" type="submit">search</button>
+            </form>
+            <div class="morphsearch-content">
+                <h3 style="text-align:center;color:#eb6a5a;">{{listType}}</h3>
+                {{> webSearchResults }}
+            </div><!-- /morphsearch-content -->
+            <span class="morphsearch-close"></span>
+        </div><!-- /morphsearch -->
+        <div class="overlay"></div>
+    </div><!-- /container -->
+</template>

@@ -1,0 +1,89 @@
+<template name="walkerChat">
+{{#if chatList}}
+{{> walkerChatList}}
+{{else}}
+{{> walkerChatMessage}}
+{{/if}}
+</template>
+
+<template name="walkerChatList">
+	<div data-role="content" class="nopad">    	 
+	        <div class="Chatlist_cont">
+				<ul data-role="listview" data-inset="true" data-theme="no" class="chat_list" id="chatChannels">
+					{{#if clients}}
+					{{#each clients}}
+					<li>
+						<a href="#" id="{{id}}">
+						<img src="{{pic}}" />
+							<h2 style="width: 150px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">{{name}}</h2>
+							<p style="width: 100px;display: inline !important;"></p>
+						</a>
+					</li>
+					{{/each}}
+					{{else}}
+					<li>
+						<a href="#">
+						<img src="/img/noimage.jpg" />
+							<h2 style="width: 100px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">No Clients Yet</h2>
+						</a>
+					</li>
+					{{/if}}
+					{{#if employer}}
+					<li id="groupChat">
+						<a href="#">
+						<img src="{{allChatPic}}" />
+							<h2 style="width: 150px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">Group Chat</h2>
+							<p style="width: 100px;display: inline !important;"></p>
+						</a>
+					</li>
+					{{#each employer}}
+					<li>
+						<a href="#" id="{{id}}">
+						<img src="{{pic}}" />
+							<h2 style="width: 150px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">{{name}}</h2>
+							<p style="width: 100px;display: inline !important;"></p>
+						</a>
+					</li>
+					{{/each}}
+					{{/if}}
+				</ul>
+			</div>
+		</div><!-- /content -->
+</template>
+
+<template name="walkerChatMessage"> 
+
+<div data-role="content" class="nopad">
+        <div class="Chat_cont" id="chatDetail">
+        {{#each message}}
+        	<div class="Chat_controw{{num}}">
+	        	<div class="chat_box">{{txt}}</div>
+	        	<div class="chat_user_pic">
+	        		<img src="{{pic}}" alt="">
+	        	</div>
+	        	<div class="clr"></div>
+	        	<div class="chat_post_time">{{time}}</div>
+        	</div>
+        	{{/each}}
+        </div>
+ </div>
+	
+	<footer class="footer">
+      <div class="container">
+        <div data-role="footer" class="chat_fid" data-position="fixed" data-theme="no">
+		<div class="chat_input_con">
+			<div class="chat_fid_save" id="send">
+				<a class="ak_btn ui-link">Send</a>
+			</div>
+			
+			<div class="chat_fid_box">
+				 <div class="akinput">
+					<input type="text" placeholder="Enter Message..." data-theme="no" id="txtMsg">
+				 </div>
+			</div>	
+			<div class="clr"></div>
+		</div>
+	</div>
+      </div>
+    </footer>
+</template>

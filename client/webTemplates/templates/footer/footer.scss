@@ -1,0 +1,57 @@
+
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons.scss';   // had to use ionicons sass package. 
+
+
+.ion-social-instagram-outline{
+	font-size:2em;
+	color: #eb6a5a;
+	line-height: 0;
+}
+
+.ion-social-twitter-outline, .ion-social-facebook-outline, .ion-social-apple-outline  {
+	font-size: 2em;
+	color: #eb6a5a;
+}
+
+.socialFooter {
+	top: 5px;
+	padding:0px;
+	margin:0px;
+}
+
+.ion-android-favorite-outline {
+	color: #eb6a5a;
+}
+
+.footerText {
+	padding:0px;
+	margin:0px;
+	top: 5px;
+}
+
+.footerText > p {
+	margin-top:18px;
+}
+
+@media only screen and (max-width:600px) {
+	.ion-social-twitter-outline, .ion-social-facebook-outline, .ion-social-instagram-outline, .ion-social-apple-outline {
+		font-size: 1em;
+	}
+	.ion-social-instagram-outline{
+		font-size:1em;
+		line-height: 0;
+		
+	}
+	#instaDiv {
+		margin-top:0px !important;
+	}
+	.footerText {
+		font-size: 11px;
+	}
+	.footerText > p {
+		margin-top:6px;
+	}
+}
+@media only screen and (max-width:600px) {
+	
+}

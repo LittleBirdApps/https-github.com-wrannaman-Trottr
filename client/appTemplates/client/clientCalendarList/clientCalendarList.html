@@ -1,0 +1,16 @@
+<template name="clientCalendarList">
+    
+    <div id="table">
+
+        {{> reactiveTable  settings=settings}}
+    </div>
+    <div>
+        {{#each CalEvents}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="clientCalendarDeleteButton">
+    <a href="#" id="delete"><img style="width:35px;height:32px;" src="/img/delete_btn.png"></a>
+</template>
+

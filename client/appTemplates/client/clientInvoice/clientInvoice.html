@@ -1,0 +1,205 @@
+<template name="clientInvoice">
+<div data-role="content" class="nopad">
+        <div class="invoice_cont">
+        	<div class="invoice_top_cont">
+            	<div class="row">
+            		<div class="col-xs-0 col-sm-3">
+            		</div>
+            		<div class="col-xs-6 col-sm-3">
+            			<img src="{{walkPath}}" style="width:250px;" alt="" id="routeMap">
+            		</div>
+            		<div class="col-xs-6 col-sm-3" id="">
+            			<!-- <img src="{{walkPic}}"  style="width:350px;" alt="" id="dogImage"> -->
+            			<img src="http://trottr2.s3.amazonaws.com/subfolder/N2itZCqhrBWPWJAka.JPG"  style="width:380px;-moz-transform:rotate(90deg);-webkit-transform:rotate(90deg); -o-transform:rotate(90deg);-ms-transform:rotate(90deg);" alt="" id="dogImage">
+            		</div>
+            		<div class="col-xs-0col-sm-3">
+            		</div>
+                </div>
+                <div class="clr" style="position:relative;z-index:100"></div>
+            </div>
+            	<div class="light_bg_row" style="position:relative;z-index:100">
+					<div class="inv_cell">
+						<label>Rate Your Experience:</label>
+					</div>
+					<div class="inv_cel2" id="ratingPanel">
+					<img id="star1" src="/img/post_star_icon.png" alt="">
+					<img id="star2" src="/img/post_star_icon.png" alt="">
+					<img id="star3" src="/img/post_star_icon.png" alt="">
+					<img id="star4" src="/img/post_star_icon.png" alt="">
+					<img id="star5" src="/img/post_star_icon.png" alt="">
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="dark_bg_row" style="position:relative;z-index:100">
+					<div class="inv_cel01">
+						<label>Tip Your Walker:</label>
+					</div>
+					<div class="inv_cel2">
+						<div class="walker_pascont">
+							<ul>
+								<li id="0" class="act_inv_rate" val='0'>0%</li>
+								<li id="10" val='10'>10%</li>
+								<li id="15" val='15'>15%</li>
+								<li id="20" val='20'>20%</li>
+							</ul>
+							<div class="clr"></div>
+						</div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<div class="light_bg_row">
+					<div class="inv_cel01">
+						<label>Total Amount Due:</label>
+					</div>
+					<div class="inv_cel2">
+						<div class="walker_clon_tm" id="totalAmount">
+                        ${{amount}}
+                        </div>
+						</div>
+					<div class="clr"></div>
+				</div>
+				{{#if promo}}
+				<div class="light_bg_row">
+					<div class="inv_cel01">
+						<label>Promo Code:</label>
+					</div>
+					<div class="inv_cel2">
+						<div class="walker_clon_tm" id="totalAmount">
+                        It looks like you have ${{promo}} worth of credit. This will automatically be applied. <br>
+                        You will be billed ${{promoApplied}}
+                        </div>
+						</div>
+					<div class="clr"></div>
+				</div>
+				{{/if}}
+					<div class="inv_paycont">
+							<div class="inv_pay" id="Payment" disabled="true">
+								<a class="ak_btn" id="paytext">Pay</a>
+							</div>
+					</div>
+					<div class="inv_paycont">
+							<div class="inv_pay" id="Review" disabled="true">
+								<a class="ak_btn" data-toggle="modal" data-target="#myModal" id="">Write A Review</a>
+							</div>
+					</div>
+					<!-- popup -->
+					<!-- Modal -->
+
+					<!-- Button trigger modal -->
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Your Review</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form class="form-horizontal">
+					        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Rating</label>
+                            <div class="col-sm-10">
+                                <select id="rating" class="demo-default" placeholder="Select An Option">
+                                    <option value="5">5 Star</option>
+                                    <option value="4">4 Star</option>
+                                    <option value="3">3 Star</option>
+                                    <option value="2">2 Star</option>
+                                    <option value="1">1 Star</option>
+                                   
+                                </select>
+                            </div>
+                        </div>
+							  <div class="form-group">
+							    <label for="review" class="col-sm-2 control-label">Review</label>
+							    <div class="col-sm-10">
+							      <textarea type="text-area" maxlength="144" class="form-control" id="review" placeholder="Review">
+							      </textarea>
+							    </div>
+							  </div>
+							</form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button id="submitReview" type="button" class="btn btn-primary">Submit Review</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<!-- <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					      </div>
+					      <div class="modal-body">
+					        <div data-role="popup" id="chatPopup" data-overlay-theme="a" data-theme="c" style="max-width:400px;" class="ui-corner-all">
+						<a data-role="button" data-theme="no" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+						<h2>Send Chat Message</h2>
+						<div class="registration_form_cont3 ak_popcontainer">
+							<div class="login_row">
+								<div class="aktxarea">
+									<textarea id="txtMsg" data-theme="no" placeholder="Enter Message" style="height: 100px !important;"></textarea>
+								</div>
+							</div>
+							<div class="login_row">
+								<a onclick="chatInitiateWithWalker()" class="ak_btn">Send</a>
+							</div>
+						</div>
+					</div>  
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Save changes</button>
+					      </div>
+					    </div>
+					  </div>
+					</div> -->
+					<!-- end popup -->
+				</div>
+				 <div class="walkerclon_timer">
+        			<div class="footer_tomer_cell">
+                    	<div class="walker_clon_tmt">
+                        	Walk Started:
+                        </div> 
+                        <div class="walker_clon_tm" id="invStartTime">
+                        {{start}}
+                        </div>
+                    </div>
+                   	<div class="footer_tomer_cell">
+                    	<div class="walker_clon_tmt">
+                        	Walk Ended:
+                        </div>
+                        <div class="walker_clon_tm" id="invEndTime">
+                        {{stop}}
+                        </div>
+                    </div>
+                    <div class="footer_tomer_cell">
+                    	<div class="walker_clon_tmt">
+                        	Walk Time
+                        </div>
+                        <div class="walker_clon_tm" id="invDuration">
+                        {{length}} Min
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+						<div class="footer_tomer_cell">
+                    	<div class="walker_clon_tmt">
+                        	PEE:
+                        </div>
+                        <div class="walker_clon_tm" id="invPeeCount">
+                        {{pee}}
+                        </div>
+                    </div>
+                   	<div class="footer_tomer_cell">
+                    	<div class="walker_clon_tmt">
+                        	Poop:
+                        </div>
+                        <div class="walker_clon_tm" id="invPoopCount">
+                        {{poop}}
+                        </div>
+                    </div>
+					<div class="clr"></div>
+        </div>
+		</div><!-- /content -->
+</template>

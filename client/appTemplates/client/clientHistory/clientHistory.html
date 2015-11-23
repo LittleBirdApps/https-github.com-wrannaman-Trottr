@@ -1,0 +1,22 @@
+<template name="clientHistory">
+    <div id="table" style="margin-top:3%; width:98%;margin-left:1%">
+
+        {{> reactiveTable settings=settings}}
+    </div>
+    <div>
+        {{#each History}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="clientInvoiceButton">
+	{{#if paid}}
+		<div class="schedule ak_btn" id="">Paid</div>
+	{{else}}
+		<div class="schedule ak_btn" id="Pay">View</div>
+	{{/if}}	
+</template>
+
+<template name="amountFormat">
+${{amount}}
+</template>

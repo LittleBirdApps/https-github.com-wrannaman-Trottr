@@ -1,0 +1,99 @@
+
+<template name="clientProfile">
+    <nav class="navbar navbar-default-tour" >
+      <div class="container">
+        <!-- <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div> -->
+        <div id="navbar" class="">
+          <ul class="nav navbar-nav">
+            <li id="onlineBooking"><a href="/clientProfile">Profile</a></li>
+            <li id="tour"><a href="/clientDogs">My Dogs</a></li>
+            <li id="about"><a href="/clientPayment">Payment</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="" style="">
+        <div class="profile">
+            <div class="profilepic">
+                <div class="profileimg"><img src="{{pic}}"/></div>
+                <i class="icon-plus"></i>
+                <i class="icon-ok"></i>
+               
+            </div>
+             {{> s3_tester4}}
+
+
+
+ <h3>Profile Info</h3>
+    <div class="row">
+    <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white"><label>Name</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="name" type="text" value="{{name}}" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white" ><label>Phone</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="phone" type="text" value="{{phone}}" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white" ><label>Email</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="email"  type="text" value="{{email}}" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-xs-3">
+                <h4 class="white"><label>Address</label></h4>
+          </div>
+          <div class="col-xs-3">
+              <input id="address"  type="text" value="{{address}}" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+            <button type="button" id="save" class="btn btn-primary btn-lg" style="border-color:none !important;" href="#">
+                <span class="btn-label"></span> Save
+            </button>
+        </div>
+    </div>
+</template>
+<template name="s3_tester4">
+   <label class='uploadbtn' style="display:inline; width:100px; background-color:#eb6a5a; border-color:none;">
+        Choose a file... <input style="" type="file" class="file_bag hidden">
+    </label>
+    <button style="background-color:#eb6a5a;margin-left:15px;border-color:none !important;" class="upload btn btn-primary btn-lg">Upload</button>
+
+    {{#each files}}
+        <p id="uploadPercent">{{percent_uploaded}}</p>
+    {{/each}}
+</template>

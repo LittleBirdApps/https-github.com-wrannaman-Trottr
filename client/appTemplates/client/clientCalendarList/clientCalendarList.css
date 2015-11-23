@@ -1,0 +1,12 @@
+.form-horizontal .control-label {
+    text-align: left;
+}
+a {
+    color: #eb6a5a;
+}
+a:hover {
+    color: #eb2912;
+}
+.clientCalendarList-page {
+	height: 1000px;
+}

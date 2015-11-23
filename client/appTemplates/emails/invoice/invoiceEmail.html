@@ -1,0 +1,21 @@
+<template name="invoiceEmail">
+	<div class="row" style="">
+	Hi {{name}}, <br>
+	Here are the details from the {{service}},
+	</div>
+	<div class="row" style="display:flex;">
+		<div class="col" style="width:50%;color:#eb6a5a;">
+			<h3>Walk Path</h3>
+			<img src="{{map}}" style="width:100%">
+		</div>
+		<div class="col" style="width:50%; color:#eb6a5a;">
+			<h3>Walk Photo</h3>
+			<img src="{{pic}}" style="width:100%">
+		</div>
+	</div>
+	<div class="row">
+	<h5>Pee:   {{pee}}</h5>
+	<h5>Poop:  {{poop}}</h5>
+	<h5>Notes: {{notes}}</h5>
+	</div>
+</template>

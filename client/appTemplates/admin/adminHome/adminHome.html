@@ -1,0 +1,23 @@
+<template name="adminHome">
+<div class="row" style="text-align:center;">
+Total Users: {{users}}
+</div>
+    <div id="table" style="width:98%;margin-left:1%;margin-top:3%;font-size:12px;">
+        {{> reactiveTable settings=settings}}
+    </div>
+</template>
+<template name="adminSave">
+    <a id="save" href=""><i style="font-size:20px; color:black;" class="ion ion-ios-shuffle"></i></a>
+</template>
+<template name="adminRoles">
+  <input type="text" id="role" value="{{roles}}">
+</template>
+<template name="adminPic">
+{{#if pic}}
+  <a style="font-size:15px; color:black;" href="{{pic}}"> <p>Pic</p> </a>
+{{else }}
+<p style="font-size:15px; color:black;">No</p> 
+{{/if}}
+
+</template>
+

@@ -1,0 +1,44 @@
+<template name="reviews">
+    <div class="container">
+        <div id="morphsearch" class="morphsearch open">
+            <div class="morphsearch-content">
+            <h1 style="margin-bottom:2%;">Reviews</h1>
+                
+            <div>
+             <div class="walker_cont">
+                <ul id="walkerList">
+                
+                {{#if Reviews}}
+            {{#each Reviews}}
+            <li id="walker" style="list-style-type: none; margin-bottom:15px;">
+                <div class="article">
+                    <div class="pro_detail"><h4>{{reviewer_name}} said: </h4>
+                        <p>{{review}}</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="art_link">
+                    <ul>
+                    
+                        <li id="reviews"><a href="" class="post_star">&nbsp;{{rating}} star rating by {{reviewer_name}} on {{format_date}}</a></li>
+                        
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+            </li>
+            
+            {{/each}}
+            {{else}}
+                <h3>Although there are no reviews yet for this walker, Trottr has put them through a rigorous selection process.</h3>
+                <p>To learn more about this please go to the FAQ page</p>
+            {{/if}}
+            </ul>
+            </div>
+            
+            </div>
+            </div><!-- /morphsearch-content -->
+            <span class="morphsearch-close"></span>
+        </div><!-- /morphsearch -->
+        <div class="overlay"></div>
+    </div><!-- /container -->
+</template>

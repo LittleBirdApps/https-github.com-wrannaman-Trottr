@@ -1,0 +1,126 @@
+.clientChatMini-page, .clientChatMini, .findWalker-page .clientChatMini-page, .findWalker-page {
+  /* For IE 6/7 */
+  /* ---------- LIVE-CHAT ---------- */ }
+  .clientChatMini-page body, .clientChatMini body, .findWalker-page .clientChatMini-page body, .findWalker-page body {
+    background: #e9e9e9;
+    color: #9a9a9a;
+    font: 100%/1.5em "Raleway", sans-serif;
+    margin: 0; }
+  .clientChatMini-page a, .clientChatMini a, .findWalker-page .clientChatMini-page a, .findWalker-page a {
+    text-decoration: none; }
+  .clientChatMini-page fieldset, .clientChatMini fieldset, .findWalker-page .clientChatMini-page fieldset, .findWalker-page fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0; }
+  .clientChatMini-page h4, .clientChatMini-page h5, .clientChatMini h4, .clientChatMini h5, .findWalker-page .clientChatMini-page h4, .findWalker-page .clientChatMini-page h5, .findWalker-page h4, .findWalker-page h5 {
+    line-height: 1.5em;
+    margin: 0; }
+  .clientChatMini-page hr, .clientChatMini hr, .findWalker-page .clientChatMini-page hr, .findWalker-page hr {
+    background: #e9e9e9;
+    border: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 1px;
+    margin: 0;
+    min-height: 1px; }
+  .clientChatMini-page img, .clientChatMini img, .findWalker-page .clientChatMini-page img, .findWalker-page img {
+    border: 0;
+    display: block;
+    height: auto;
+    max-width: 100%; }
+  .clientChatMini-page input, .clientChatMini input, .findWalker-page .clientChatMini-page input, .findWalker-page input {
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0; }
+  .clientChatMini-page p, .clientChatMini p, .findWalker-page .clientChatMini-page p, .findWalker-page p {
+    margin: 0; }
+  .clientChatMini-page .clearfix, .clientChatMini .clearfix, .findWalker-page .clientChatMini-page .clearfix, .findWalker-page .clearfix {
+    *zoom: 1; }
+  .clientChatMini-page .clearfix:before, .clientChatMini-page .clearfix:after, .clientChatMini .clearfix:before, .clientChatMini .clearfix:after, .findWalker-page .clientChatMini-page .clearfix:before, .findWalker-page .clientChatMini-page .clearfix:after, .findWalker-page .clearfix:before, .findWalker-page .clearfix:after {
+    content: "";
+    display: table; }
+  .clientChatMini-page .clearfix:after, .clientChatMini .clearfix:after, .findWalker-page .clientChatMini-page .clearfix:after, .findWalker-page .clearfix:after {
+    clear: both; }
+  .clientChatMini-page #live-chat, .clientChatMini #live-chat, .findWalker-page .clientChatMini-page #live-chat, .findWalker-page #live-chat {
+    bottom: 0;
+    font-size: 12px;
+    right: 24px;
+    position: fixed;
+    width: 300px; }
+  .clientChatMini-page #live-chat header, .clientChatMini #live-chat header, .findWalker-page .clientChatMini-page #live-chat header, .findWalker-page #live-chat header {
+    background: #eb6a5a;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 16px 24px; }
+  .clientChatMini-page #live-chat h4:before, .clientChatMini #live-chat h4:before, .findWalker-page .clientChatMini-page #live-chat h4:before, .findWalker-page #live-chat h4:before {
+    background: #1a8a34;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    margin: 0 8px 0 0;
+    width: 8px; }
+  .clientChatMini-page #live-chat h4, .clientChatMini #live-chat h4, .findWalker-page .clientChatMini-page #live-chat h4, .findWalker-page #live-chat h4 {
+    font-size: 12px; }
+  .clientChatMini-page #live-chat h5, .clientChatMini #live-chat h5, .findWalker-page .clientChatMini-page #live-chat h5, .findWalker-page #live-chat h5 {
+    font-size: 10px; }
+  .clientChatMini-page #live-chat form, .clientChatMini #live-chat form, .findWalker-page .clientChatMini-page #live-chat form, .findWalker-page #live-chat form {
+    padding: 24px; }
+  .clientChatMini-page #live-chat input[type="text"], .clientChatMini #live-chat input[type="text"], .findWalker-page .clientChatMini-page #live-chat input[type="text"], .findWalker-page #live-chat input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+    outline: none;
+    width: 234px; }
+  .clientChatMini-page .chat-message-counter, .clientChatMini .chat-message-counter, .findWalker-page .clientChatMini-page .chat-message-counter, .findWalker-page .chat-message-counter {
+    background: #e62727;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    left: 0;
+    line-height: 28px;
+    margin: -15px 0 0 -15px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 28px; }
+  .clientChatMini-page .chat-close, .clientChatMini .chat-close, .findWalker-page .clientChatMini-page .chat-close, .findWalker-page .chat-close {
+    background: #eb6a5a;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 10px;
+    height: 16px;
+    line-height: 16px;
+    margin: 2px 0 0 0;
+    text-align: center;
+    width: 16px; }
+  .clientChatMini-page .chat, .clientChatMini .chat, .findWalker-page .clientChatMini-page .chat, .findWalker-page .chat {
+    background: #fff; }
+  .clientChatMini-page .chat-history, .clientChatMini .chat-history, .findWalker-page .clientChatMini-page .chat-history, .findWalker-page .chat-history {
+    height: 252px;
+    padding: 8px 24px;
+    overflow-y: scroll; }
+  .clientChatMini-page .chat-message, .clientChatMini .chat-message, .findWalker-page .clientChatMini-page .chat-message, .findWalker-page .chat-message {
+    margin: 16px 0; }
+  .clientChatMini-page .chat-message img, .clientChatMini .chat-message img, .findWalker-page .clientChatMini-page .chat-message img, .findWalker-page .chat-message img {
+    border-radius: 50%;
+    float: left; }
+  .clientChatMini-page .chat-message-content, .clientChatMini .chat-message-content, .findWalker-page .clientChatMini-page .chat-message-content, .findWalker-page .chat-message-content {
+    margin-left: 56px; }
+  .clientChatMini-page .chat-time, .clientChatMini .chat-time, .findWalker-page .clientChatMini-page .chat-time, .findWalker-page .chat-time {
+    float: right;
+    font-size: 10px; }
+  .clientChatMini-page .chat-feedback, .clientChatMini .chat-feedback, .findWalker-page .clientChatMini-page .chat-feedback, .findWalker-page .chat-feedback {
+    font-style: italic;
+    margin: 0 0 0 80px; }
+
+/*# sourceMappingURL=clientChatMini.css.map */

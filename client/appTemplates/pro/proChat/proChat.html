@@ -1,0 +1,107 @@
+<template name="proChat">
+{{#if chatList}}
+{{> proChatList}}
+{{else}}
+{{> proChatMessage}}
+{{/if}}
+</template>
+
+<template name="proChatList">
+	<div data-role="content" class="nopad">    
+	<h1 style="text-align:center;">Clients</h1>  	 
+	        <div class="Chatlist_cont">
+				<ul data-role="listview" data-inset="true" data-theme="no" class="chat_list" id="chatChannels">
+					{{#if clients}}
+					{{#each clients}}
+					<li>
+						<a href="#" id="{{id}}">
+						<img src="{{pic}}" />
+							<h2 style="width: 150px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">{{name}}</h2>
+							<p style="width: 100px;display: inline !important;"></p>
+						</a>
+					</li>
+					{{/each}}
+					{{else}}
+					<li>
+						<a href="#">
+						<img src="/img/noimage.jpg" />
+							<h2 style="width: 100px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">No Clients Yet</h2>
+							<p style="width: 100px;display: inline !important;">Sorry, you don't have any clients yet, they will be available here when they book a walk with you.</p>
+						</a>
+					</li>
+					{{/if}}
+				</ul>
+			</div>
+	<h1 style="text-align:center;">Employees</h1>  	 
+	        <div class="Chatlist_cont">
+				<ul data-role="listview" data-inset="true" data-theme="no" class="chat_list" id="chatChannels">
+					<ul data-role="listview" data-inset="true" data-theme="no" class="chat_list" id="chatChannels">
+					{{#if employees}}
+					<li id="groupChat">
+						<a href="#">
+						<img src="{{allChatPic}}" />
+							<h2 style="width: 150px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">All Employees</h2>
+							<p style="width: 100px;display: inline !important;"></p>
+						</a>
+					</li>
+					{{#each employees}}
+					<li>
+						<a href="#" id="{{id}}">
+						<img src="{{pic}}" style="margin-top:1%;"/>
+							<h2 style="width: 150px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">{{name}}</h2>
+							<p style="width: 100px;display: inline !important;"></p>
+						</a>
+					</li>
+					{{/each}}
+					{{else}}
+					<li>
+						<a href="#">
+						<img src="/img/noimage.jpg" />
+							<h2 style="width: 100px;display: inline !important;position: relative;margin-top: 41px;margin-left: 25px;">No Employees Yet</h2>
+							<p style="width: 100px;display: inline !important;">Sorry, you don't have any Employees yet, go to <a href="/proEmployee">employees</a> page for more info</p>
+						</a>
+					</li>
+					{{/if}}
+				</ul>
+				</ul>
+			</div>
+		</div><!-- /content -->
+</template>
+
+<template name="proChatMessage"> 
+
+<div data-role="content" class="nopad">
+        <div class="Chat_cont" id="chatDetail">
+	        {{#each message}}
+	        	<div class="Chat_controw{{num}}">
+		        	<div class="chat_box">{{txt}}</div>
+		        	<div class="chat_user_pic">
+		        		<img src="{{pic}}" alt="">
+		        	</div>
+		        	<div class="clr"></div>
+		        	<div class="chat_post_time">{{time}}</div>
+	        	</div>
+	        {{/each}}
+        
+        </div>
+ </div>
+	
+	<footer class="footer">
+      <div class="container">
+        <div data-role="footer" class="chat_fid" data-position="fixed" data-theme="no">
+		<div class="chat_input_con">
+			<div class="chat_fid_save" id="send">
+				<a class="ak_btn ui-link">Send</a>
+			</div>
+			
+			<div class="chat_fid_box">
+				 <div class="akinput">
+					<input type="text" placeholder="Enter Message..." data-theme="no" id="txtMsg">
+				 </div>
+			</div>	
+			<div class="clr"></div>
+		</div>
+	</div>
+      </div>
+    </footer>
+</template>

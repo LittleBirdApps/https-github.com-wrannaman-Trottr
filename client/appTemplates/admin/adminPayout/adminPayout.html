@@ -1,0 +1,18 @@
+<template name="adminPayout">
+    <div id="table" style="width:98%;margin-left:1%;margin-top:3%;font-size:12px;">
+    	{{> serverFacts}}
+        {{> reactiveTable settings=settings}}
+    </div>
+</template>
+
+<template name="adminWalkPic">
+  <a href="{{walkPic}}"> <p>Walk Pic</p> </a>
+</template>
+
+<template name="adminWalkTrack">
+  <a href="{{map_url}}"> <p>Track</p> </a>
+</template>
+
+<template name="adminPay">
+    <a id="pay" href="" style="font-size:18px; color:#eb6a5a;"><i class="ion ion-cash"></i></a>
+</template>

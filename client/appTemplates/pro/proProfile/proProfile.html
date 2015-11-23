@@ -1,0 +1,105 @@
+
+<template name="proProfile">
+    <div class="profilecontainer" style="">
+            <div class="profile">
+            <div class="profilepic">
+                <div class="profileimg"><img src="{{pic}}"/></div>
+                <i class="icon-plus"></i>
+                <i class="icon-ok"></i>
+            </div>
+            
+    {{> s3_tester3}}
+            <h3>Profile Info</h3>
+            <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;"><label>Name</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="name" style="float:left;" type="text" value="{{name}}" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;"><label>Business Name</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="businessName" style="float:left;" type="text" value="{{businessName}}" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;" ><label>Phone</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="phone"  style="float:left;" type="text" value="{{phone}}" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;" ><label>Email</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="email" style="float:left;" type="text" value="{{email}}" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;" ><label>Address</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="address" style="float:left;" type="text" value="{{address}}"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;" ><label>Radius</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="radius"  style="float:left;" type="text" value="{{radius}}"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;" ><label>About</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="about"  style="float:left;" type="text" value="{{about}}"/>
+          </div>
+        </div>
+            <h3>Direct Deposit</h3>
+            <div class="row">
+          <div class="col-md-6" >
+                <h4 class="white" style="float:right;" ><label>Account Number</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="accountNum"  style="float:left;" type="number" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+                <h4 class="white" style="float:right;" ><label>Routing Number</label></h4>
+          </div>
+          <div class="col-md-6">
+              <input id="routingNum" style="float:left;" type="number" />
+          </div>
+        </div>
+             <div class="ak_btn" id="save" style="text-align:center;margin-left:25%;"> Save </div>
+        </div>
+        
+        
+
+
+    </div>
+</template>
+
+<template name="s3_tester3">
+   <label class='uploadbtn' style="display:inline; width:100px; background-color:#eb6a5a; border-color:none;">
+        Choose a file... <input style="" type="file" class="file_bag hidden">
+    </label>
+    <button style="background-color:#eb6a5a;margin-left:15px;border-color:none !important;" class="upload btn btn-primary btn-lg">Upload</button>
+
+    {{#each files}}
+        <p id="uploadPercent">{{percent_uploaded}}</p>
+    {{/each}}
+</template>

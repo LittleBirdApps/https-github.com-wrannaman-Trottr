@@ -1,0 +1,396 @@
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons.scss';  
+
+// This is for the background image and text over it. 
+.home-page {
+.homeBackground{
+  background: url('/img/homeBackground2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ // margin-top:50px;
+  min-height:925px; 
+}
+
+.headerText {
+  color: #fff;
+  text-align:center;
+  margin-top: 100px;
+}
+
+.marginTop25 {
+  margin-top:25%;
+}
+
+.trottr_btn { 
+  height:42px; 
+  line-height:42px; 
+  color:#fff;
+  background:#eb6a5a;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px; 
+  background: transparent;
+  width:100%;
+  word-break: none;
+  min-width:120px;
+  border: 2px solid #fff;
+  outline: 2px 2px 2px #eb6a5a; 
+  text-align:center; 
+  display:block; 
+  font-weight:normal !important; 
+  font-size:16px !important; 
+  font-family: 'proxima_novalight'; 
+  letter-spacing:1px;
+}
+
+a:hover, a:focus {
+  color: #eb6a5a;
+  text-decoration: none;
+  outline: none;
+}
+
+#homeButton{
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+@media only screen and (max-width:1000px) {
+  .homeBackground {
+    min-height:800px;
+  }
+  
+}
+
+@media only screen and (max-width:800px) {
+  .homeBackground {
+    min-height:600px;
+  }
+  
+}
+
+
+@media only screen and (max-width:700px) {
+  .homeBackground {
+    min-height:500px;
+  }
+  
+}
+
+@media only screen and (max-width:440px) {
+  .homeBackground {
+    min-height:400px;
+  }
+  
+}
+
+// end home background image and text
+
+
+// Section below full screen image
+
+.trottr_btn_wide { 
+  height:42px; 
+  line-height:42px; 
+  color:#eb6a5a;
+  background:#eb6a5a;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px; 
+  background: transparent;
+  width:100%;
+  word-break: none;
+  min-width:185px;
+  border: 1px solid #eb6a5a;
+  outline: 2px 2px 2px #eb6a5a; 
+  text-align:center; 
+  display:block; 
+  font-weight:normal !important; 
+  font-size:16px !important; 
+  font-family: 'proxima_novalight'; 
+  letter-spacing:1px;
+}
+
+.calloutButton {
+    margin-bottom:35px;
+  }
+
+.highlightFix h3, .highlightFix p {
+  margin-left:25% !important;
+}
+
+.quickHighlights {
+  padding-top:20px;
+  //margin-left:5%; 
+}
+
+.center {
+  text-align:center;
+}
+
+@media only screen and (max-width:700px) {
+  .quickHighlights {
+    padding-top:120px;
+    margin-left: 0;
+  }
+  .calloutButton {
+    margin-left:-3%;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .quickHighlights {
+    padding-top:110px;
+  }
+  .calloutButton {
+    margin-left:-7%;
+  }
+  .quickHighlights .col-xs-6 {
+    padding-left: 0px !important;
+    //margin-left: -5%;
+  }
+  .highlightFix h3, .highlightFix p {
+    margin-left:0% !important;
+  }
+}
+
+@media only screen and (max-width:478px) {
+  .calloutButton {
+    margin-left:-10%;
+    margin-bottom:35px;
+  }
+  .quickHighlights .platformHighlightFix {
+    //padding-top:97px;
+    width:46%;
+  }
+}
+
+@media only screen and (max-width:440px) {
+  .calloutButton {
+    margin-left:-10%;
+    margin-bottom:35px;
+  }
+  .quickHighlights {
+    padding-top:97px;
+    //width:50%;
+  }
+}
+
+// end section below full screen image
+
+// fulscreen video section
+
+.video-section .pattern-overlay {
+  background-color: rgba(71, 71, 71, 0.59);
+  padding: 110px 0 32px;
+  min-height: 496px; 
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+  text-align:center;
+  color:#fff;
+}
+
+.video-section h1{
+  font-size:110px;
+}
+
+.video-section h3{
+  font-size: 25px;
+  font-weight:lighter;
+  margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+
+.trottr_btn_white { 
+  height:42px; 
+  line-height:42px; 
+  color:#fff;
+  background:#fff;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px; 
+  background: transparent;
+  width:100%;
+  word-break: none;
+  //min-width:185px;
+  border: 1px solid #fff;
+  outline: 2px 2px 2px #fff; 
+  text-align:center; 
+  display:block; 
+  font-weight:normal !important; 
+  font-size:16px !important; 
+  font-family: 'proxima_novalight'; 
+  letter-spacing:1px;
+}
+
+// end fullscreen video section
+
+// icon highlights section
+.iconCallout {
+  margin-bottom:50px;
+}
+.iconHighlights {
+  margin-top:50px;
+  text-align:center;
+}
+
+.iconHighlights h1 {
+  text-align:center;
+}
+
+.iconHighlights2 {
+  text-align: center;
+}
+
+.ion-ios7-calendar-outline, .ion-card, .ion-iphone, .ion-connection-bars, .ion-map, .ion-person-add, .ion-ios7-heart, .ion-ios7-locked {
+  font-size: 4em;
+  color: #eb6a5a;
+}
+
+@media only screen and (max-width:600px) {
+  .ion-ios7-calendar-outline, .ion-card, .ion-iphone, .ion-connection-bars, .ion-map, .ion-person-add, .ion-ios7-heart, .ion-ios7-locked {
+    font-size: 3em;
+  }
+  .trottr_btn_white {
+    font-size:12px !important;
+  }
+}
+// end icon highlights section
+
+
+// call out section III w image 
+.callOutImage {
+  text-align: center;
+  background-image: url('/img/couple_w_dog.jpg');
+  background-position-y: 100%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: 500px;
+  color: #fff;
+}
+
+.quickHighlightsCallOut {
+  margin-top:150px;
+}
+
+@media only screen and (max-width:600px) {
+  .callOutImage {
+    background-position-y: 42%;
+  }
+}
+
+
+// END call out section III w image 
+
+// mobile demo
+
+.mobileDemoText {
+  text-align:center;
+
+}
+
+.mobileDemo > div > img {
+  height: 400px;
+}
+.mobileDemo > div  {
+  text-align:center;
+}
+.mobileDemo h3 {
+  text-align:center;
+}
+
+@media only screen and (max-width:1413px) {
+  .mobileDemo > div > img {
+  height: 350px;
+  }
+}
+
+@media only screen and (max-width:1250px) {
+  .mobileDemo > div > img {
+  height: 300px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .mobileDemo > div > img {
+  height: 250px;
+  }
+  .mobileDemoText {
+  margin-top:-50px;
+  }
+}
+// end mobile demo
+
+// demo form
+
+.quickHighlightsFooter {
+  margin-top:50px;
+}
+
+.setUpDemo {
+  text-align: center;
+  background-image: url('/img/working.jpg');
+  background-position-y: 50%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  min-height: 500px;
+  color: #fff;
+}
+
+form .row {
+  margin-right: -15px !important;
+}
+.trottr_btn_form { 
+  height:42px; 
+  line-height:42px; 
+  color:#fff;
+  background:#fff;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px; 
+  background: transparent;
+  width:100%;
+  word-break: none;
+  min-width:185px;
+  border: 1px solid #fff;
+  outline: 2px 2px 2px #fff; 
+  text-align:center; 
+  display:block; 
+  font-weight:normal !important; 
+  font-size:16px !important; 
+  font-family: 'proxima_novalight'; 
+  letter-spacing:1px;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+@media only screen and (max-width:600px) {
+  .setUpDemo {
+    background-size: 150%;
+    background-position-y: 100%;
+  }
+}
+
+// end demo form
+
+}

@@ -1,0 +1,33 @@
+<template name="webSearchResults">
+    <div class="walker_cont">
+        <ul id="walkerList">
+            {{#if walkers}}
+            {{#each walkers}}
+            <li id="walkerSearch">
+                <div class="article">
+                    <div class="ak_btn_mini" id="bookMe"> Book Me! </div>
+                    <div class="pro_pic">
+                        <img src="{{pic}}"  alt="">
+                    </div>
+                    <div class="pro_detail"><h4>{{name}}</h4>
+                        <p>{{about_me}}</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="art_link">
+                    <ul>
+                        <li id="call"><a href=""  class="post_call"> Call</a></li>
+                        <li id="chat"><a class="post_chat">&nbsp; Chat</a></li>
+                        <li id="reviews"><a href="" class="post_star">&nbsp; Reviews</a></li>
+                        <li><a href="" class="post_location">&nbsp; {{walkRadius}} Miles Away</a></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+            </li>
+            {{/each}}
+            {{else}}
+                <h1 style="line-height:50px !important;">Bummer, there are no walkers in your area yet! Check back soon.</h1>
+                {{/if}}
+        </ul>
+    </div>
+</template>

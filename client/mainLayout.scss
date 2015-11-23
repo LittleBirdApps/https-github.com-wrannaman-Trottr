@@ -1,0 +1,9 @@
+//@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons.scss';   // had to use ionicons sass package. 
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill:visited {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.icon:before {
+font-family: 'Ionicons' !important;
+}

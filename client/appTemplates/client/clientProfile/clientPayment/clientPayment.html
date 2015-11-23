@@ -1,0 +1,128 @@
+
+<template name="clientPayment">
+    <nav class="navbar navbar-default-tour" >
+      <div class="container">
+        <div id="navbar" class="">
+          <ul class="nav navbar-nav">
+            <li id="onlineBooking"><a href="/clientProfile">Profile</a></li>
+            <li id="tour"><a href="/clientDogs">My Dogs</a></li>
+            <li id="about"><a href="/clientPayment">Payment</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div>
+      {{#if cards}}
+      <h3 style="text-align:center;">My Cards</h3>
+      {{#each cards}}
+      <div class="row" id="card" style="text-align:center;">
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-2">
+            <h4 class="white">{{label}}</h4>
+        </div>
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-2">
+           <a href="" id="delete"><img style="width:35px;height:32px;" src="/img/delete_btn.png"></a>
+        </div>
+        <div class="col-xs-2">
+        </div>
+       </div> 
+      {{/each}}
+      {{/if}}
+      {{#if credit}}
+      <h3 style="text-align:center;">Credit Amount: ${{credit}} </h3>
+      {{/if}}
+    </div>
+    <div class="" style="">
+        <div class="" style="text-align:center;">
+         <h3>Payment Info</h3>
+         <div class="row">
+         <div class="col-xs-3">
+        </div>
+          <div class="col-md-3">
+                <h4 class="white"><label>Card Label</label></h4>
+          </div>
+          <div class="col-md-3">
+              <input id="label"  type="text" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-md-3">
+                <h4 class="white" ><label>Card Number</label></h4>
+          </div>
+          <div class="col-md-3">
+              <input id="ccNum"  type="text" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-md-3">
+                <h4 class="white" ><label>Expiration Month</label></h4>
+          </div>
+          <div class="col-md-3">
+              <input id="ccExpMo" type="text"  />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-md-3">
+                <h4 class="white" ><label>Expiration Year</label></h4>
+          </div>
+          <div class="col-md-3">
+              <input id="ccExpYr"  type="text"  />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-3">
+        </div>
+          <div class="col-md-3">
+                <h4 class="white" ><label>CVC (Security Code)</label></h4>
+          </div>
+          <div class="col-md-3">
+              <input id="ccCvc"  type="text" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+            <button type="button" id="save" class="btn btn-primary btn-lg" style="border-color:none !important;" href="#">
+                <span class="btn-label"></span> Save
+            </button>
+        </div>
+    </div>
+    <div class="" style="">
+        <div class="" style="text-align:center;">
+         <h3>Promo Code</h3>
+         <div class="row">
+         <div class="col-xs-3">
+        </div>
+          <div class="col-md-3">
+                <h4 class="white"><label>Promo Code</label></h4>
+          </div>
+          <div class="col-md-3">
+              <input id="promoCode"  type="text" />
+          </div>
+          <div class="col-xs-3">
+        </div>
+        </div>
+            <button type="button" id="promoSubmit" class="btn btn-primary btn-lg" style="border-color:none !important;" href="#">
+                <span class="btn-label"></span> Apply
+            </button>
+        </div>
+    </div>
+</template>

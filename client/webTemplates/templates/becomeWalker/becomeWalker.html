@@ -1,0 +1,37 @@
+<template name="becomeWalker">
+    <div class="container" style="width:100%;margin-top:100px;height:700px;">
+
+        <div class="fs-form-wrap" id="fs-form-wrap">
+            <form id="myform" class="fs-form fs-form-full" autocomplete="off">
+                <ol class="fs-fields">
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
+                        <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Dean Moriarty" required/>
+                        <label class="fs-field-label fs-anim-upper" for="q1">What's your phone number?</label>
+                        <input class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="310 229 3939" required/>
+                        <label style="margin-top:3%;" class="fs-field-label fs-anim-upper" for="q1">What's your Address</label>
+                        <input class="fs-anim-lower" id="q3" name="q3" type="text" placeholder="1980 Dog st. #4 LA, CA, 90004" required/>
+                    </li>
+                    <li>
+
+                        <label class="fs-field-label fs-anim-upper" for="q1">How many miles will you travel to walk dogs?</label>
+                        <input class="fs-anim-lower" id="q4" name="q4" type="number" placeholder="5" required/>
+                        <label class="fs-field-label fs-anim-upper" for="q1">Will you help us by sharing on your social network?</label>
+                        <input class="fs-anim-lower" id="q5" name="q5" type="text" placeholder="Yes" required/>
+                        <label class="fs-field-label fs-anim-upper" for="q1">Do you own an iPhone?</label>
+                        <input class="fs-anim-lower" id="q6" name="q6" type="text" placeholder="Yes or No?" required/>
+
+                    </li>
+                    <li>
+                        <label class="fs-field-label fs-anim-upper" for="q4">Tell us about yourself</label>
+                        <textarea class="fs-anim-lower" id="q7" name="q7" placeholder="Describe here"></textarea>
+                        <label class="fs-field-label fs-anim-upper" for="q4">Describe why you want to be a Trottr Walker</label>
+                        <textarea class="fs-anim-lower" id="q8" name="q8" placeholder="Describe here"></textarea>
+                    </li>
+                </ol><!-- /fs-fields -->
+                <button class="fs-submit" type="submit">Send answers</button>
+            </form><!-- /fs-form -->
+        </div><!-- /fs-form-wrap -->
+
+    </div><!-- /container -->
+</template>

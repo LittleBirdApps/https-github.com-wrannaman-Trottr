@@ -1,0 +1,49 @@
+
+<template name="walkerStop">
+<div data-role="content" class="nopad">
+                {{> s3_tester2}}
+                
+
+                <div class="registration_form_cont3">
+                    <div class="login_row">
+                        <div class="akinput">
+                            <input type="text" id="pees" placeholder="Pees" data-theme="no" maxlength="2">
+                        </div>
+                    </div>
+
+                    <div class="login_row">
+                        <div class="akinput">
+                            <input type="text" id="poops" placeholder="Poops" data-theme="no" maxlength="2">
+                        </div>
+                    </div>
+                    <div class="login_row">
+                        <div class="akinput">
+                            <input type="tel" id="notes" placeholder="Notes" data-theme="no" maxlength="144">
+                        </div>
+                    </div>
+                    <div class="login_row">
+                        <a class="ak_btn" id="completeWalk">Save</a>
+                    </div>
+
+                </div>
+                    <div style="display:none;">
+                        {{> invoiceEmail}}
+                    </div>
+                </div>
+</template>
+
+<template name="s3_tester2">
+<div class="camera_img_cont2">
+
+                    <img alt="" src="img/camera_img.png" id="imgUser" class="flt_l">
+                    <div id="walkPhoto" class="pull_center flt_l reg3_takepic_btn">
+                        <a  data-theme="no" class="ak_btn_mini">Take a Picture</a>
+                    </div>
+                    <input type="file" class="file_bag" style="display:none;">
+                    <button class="upload" style="display:none;">Upload</button>
+                    <div class="clr"></div>
+                </div>
+    {{#each files}}
+        <p>{{percent_uploaded}}</p>
+    {{/each}}
+</template>

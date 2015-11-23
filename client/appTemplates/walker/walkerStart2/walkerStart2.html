@@ -1,0 +1,57 @@
+
+<template name="walkerStart2">
+  <div data-role="content" class="nopad">   
+        <div class="walker_clon" id="infoPanel">
+        <div class="walker_clon_row">
+            <div class="all_walker_cell">
+                    <div class="walker_clon_cell">{{clientName}}</div>
+                    <div class="walker_clon_cell">{{clientPhone}}</div>
+                    <div class="walker_clon_cell">{{walkLength}}</div>
+                    <div class="clr"></div>
+            </div>
+                    <div class="walker_clon_cell2"> {{address}}</div>
+        </div>
+        <div class="walker_clon_row">
+            <div class="all_walker_cell">
+                    <div class="walker_clon_cell">{{dog1}}</div>
+                    <div class="walker_clon_cell"></div>
+                    <div class="walker_clon_cell">{{dog1Info}}</div>
+                    <div class="clr"></div>
+            </div>
+                    
+        </div>
+        </div>
+    </div><!-- /content -->
+    <div class="your-clock">
+    </div>
+    <footer data-role="footer" class="footer height_free" data-position="fixed" data-theme="no">
+        <div class="walkerclon_timer">
+                    <div class="footer_tomer_cell">
+                        <div class="walker_clon_tmt">
+                            Walk Started:
+                        </div>
+                        <div class="walker_clon_tm" id="wstartTime">
+                        </div>
+                    </div>
+                    <div class="footer_tomer_cell">
+                        <div class="walker_clon_tmt">
+                            Walk Ended:
+                        </div>
+                        <div class="walker_clon_tm" id="wendTime">
+                        </div>
+                    </div>
+                    <div class="footer_tomer_cell">
+                        <div class="walker_clon_tmt">
+                            Walk Time:
+                        </div>
+                        <div class="walker_clon_tm" id="wTimeDiff">
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+        </div>
+        <div  class="bottomButtons">
+        <a class="the_btn" id="start">Start</a>
+        <a class="the_btn" id="stop">Stop</a>
+        </div>
+        </footer>
+</template>

@@ -1,0 +1,13 @@
+<template name="walkerCalendarList">
+    <div id="table" style="width:98%;margin-left:1%;margin-top:3%;">
+        {{> reactiveTable settings=settings}}
+    </div>
+    <div>
+        {{#each CalEvents}}
+        {{/each}}
+    </div>
+</template>
+<template name="walkerCalendarListButton">
+    <a id="startWalk" href=""><i class="glyphicon glyphicon-play"></i></a>
+</template>
+

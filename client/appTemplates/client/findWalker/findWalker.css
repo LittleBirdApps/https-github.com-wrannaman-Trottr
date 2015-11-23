@@ -1,0 +1,156 @@
+.findWalker-page {
+  height: 1000px; }
+  .findWalker-page .walker_cont {
+    padding: 21px 10px 22px 10px;
+    margin: 0; }
+  .findWalker-page .walker_cont > ul {
+    margin: 0;
+    padding: 0; }
+  .findWalker-page .walker_cont > ul > li {
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+    background: #fff;
+    position: relative; }
+  .findWalker-page .walker_cont > ul > li:after {
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    content: "";
+    right: 5px;
+    top: 15px;
+    background: url("/img/fwd_button.png") no-repeat right 5px;
+    background-size: 48px 48px; }
+  .findWalker-page .walker_cont > ul > li .article {
+    display: block;
+    padding: 7px 5px 8px 5px;
+    margin: 0; }
+  .findWalker-page .walkerList_cont {
+    border: solid 1px #eae2e2;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    margin: 5px;
+    box-shadow: 0px 1px 2px #ccc; }
+  .findWalker-page .walkerList {
+    margin: 0;
+    padding: 0;
+    background: #fffcfc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fffffe), to(#fffcfc));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(#fffffe, #fffcfc);
+    /* Chrome 10+, Saf5.1+ */
+    background-image: -moz-linear-gradient(#fffffe, #fffcfc);
+    /* FF3.6 */
+    background-image: -ms-linear-gradient(#fffffe, #fffcfc);
+    /* IE10 */
+    background-image: -o-linear-gradient(#fffffe, #fffcfc);
+    /* Opera 11.10+ */
+    background-image: linear-gradient(#fffffe, #fffcfc); }
+  .findWalker-page .walkerList > h3 {
+    margin: 0 16px;
+    padding: 0;
+    font-size: 36px;
+    color: #eb6a5a;
+    border-bottom: solid 1px #e3e4e6;
+    font-weight: normal;
+    text-align: center; }
+  .findWalker-page .walkerList ul {
+    margin: 0;
+    padding: 0 15px; }
+  .findWalker-page .walkerList ul li {
+    list-style: none;
+    margin: 0px 0 0 0;
+    padding: 10px 0; }
+  .findWalker-page .walkerList ul li:first-child {
+    margin: 0; }
+  .findWalker-page .walkerList ul li .listdatetime {
+    float: left;
+    margin: 0 8px 0 0;
+    padding: 4px 0 0 0;
+    font-size: 15px;
+    letter-spacing: 1px; }
+  .findWalker-page .walker_cont > ul > li .article {
+    display: block;
+    padding: 7px 5px 8px 5px;
+    margin: 0; }
+  .findWalker-page .pro_pic {
+    float: left;
+    width: 155px;
+    height: 155px;
+    float: left; }
+  .findWalker-page .pro_pic img {
+    width: 100%;
+    height: 100%; }
+  .findWalker-page .pro_detail {
+    float: left;
+    padding: 0 0 0 10px;
+    width: 90%;
+    max-width: 2000px; }
+  .findWalker-page .pro_detail h4 {
+    font-size: 18px;
+    color: #eb6a5a;
+    padding: 0 0 2px 0;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Raleway'; }
+  .findWalker-page .pro_detail p {
+    font-size: 14px;
+    color: #666;
+    line-height: 11px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Raleway';
+    letter-spacing: 1px; }
+  .findWalker-page .clr {
+    clear: both; }
+  .findWalker-page .art_link {
+    width: 100%;
+    height: 28px;
+    background: #f8f9f9;
+    border-top: solid 1px #f2f3f4; }
+  .findWalker-page .art_link ul {
+    margin: 0;
+    padding: 0; }
+  .findWalker-page .art_link ul {
+    margin: 0;
+    padding: 0; }
+  .findWalker-page .art_link ul li {
+    margin: 0;
+    padding: 3px 0 0 0;
+    list-style: none;
+    width: 24%;
+    float: left; }
+  .findWalker-page .art_link ul li a {
+    font-size: 12px;
+    color: #65707a;
+    display: block;
+    margin-top: 3px;
+    min-height: 20px; }
+  .findWalker-page .post_call {
+    background: url("/img/call_icon.png") no-repeat 0 0;
+    background-size: 17px 16px;
+    padding: 4px 0 1px 22px;
+    margin-left: 10px; }
+  .findWalker-page .post_chat {
+    background: url("/img/post_chat_icon.png") no-repeat 0 3px;
+    background-size: 18px 17px;
+    padding: 4px 0 0 19px;
+    margin-left: 10px; }
+  .findWalker-page .post_star {
+    background: url("/img/post_star_icon.png") no-repeat 0 2px;
+    background-size: 18px 18px;
+    padding: 4px 0 0px 16px;
+    margin-left: 10px; }
+  .findWalker-page .post_location {
+    background: url("/img/post_location_icon.png") no-repeat 0 5px;
+    background-size: 12px 17px;
+    padding: 4px 0 0px 13px; }
+
+/*# sourceMappingURL=findWalker.css.map */

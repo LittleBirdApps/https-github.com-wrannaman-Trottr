@@ -1,0 +1,55 @@
+
+<template name="proEmployee">
+    <div class="row">
+        <div class="" syle='width:90%;text-align:center;'>
+            <h2>
+                Employees
+            </h2>
+            <h4>
+                To add employees to your account, have them register, then click 'Add An Employee'.
+            </h4>
+            <div class="inv_pay" id="showModal" disabled="false">
+                <a class="ak_btn_mini"> Add An Employee</a>
+            </div>
+             <div id="table">
+                {{> reactiveTable collection=employees settings=settings}}
+            </div>
+            <div>
+                {{#each employee}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="proEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Find Your Employee</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                        <label for="" class="col-sm-4 control-label">Email Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="closeRecurring">Close</button>
+                    <button type="button" class="btn btn-primary" id="addEmployee">Add Employee</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="proEmployeeDeleteButton">
+    <a style="" id="delete" href="#"><img src="/img/delete_btn.png" style="width:28px;height:27px;"></a>
+</template>
+
+<template name="ProEmployeeViewButton">
+    <a  style="" id="viewEmployee" href="/proWalkerHighlight"><i class="glyphicon glyphicon-play"></i></a>
+</template>

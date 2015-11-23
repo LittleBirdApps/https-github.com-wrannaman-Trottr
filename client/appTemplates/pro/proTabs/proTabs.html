@@ -1,0 +1,99 @@
+<template name="proTabs">
+    <div class="container">
+        <!-- Top Navigation -->
+        <section>
+            <div class="tabs tabs-style-linebox">
+                <nav>
+                    <ul>
+                        <li id="1"><a href="#section-linebox-5"><span>1</span></a></li>
+                        <li id="2"><a href="#section-linebox-4"><span>2</span></a></li>
+                        <!-- <li id="3"><a href="#section-linebox-2"><span>3</span></a></li>
+                        <li id="4"><a href="#section-linebox-3"><span>4</span></a></li> -->
+                    </ul>
+                </nav>
+                <div class="content-wrap">
+
+                    <section id="section-linebox-1">
+                        <div class="row">
+                            <div class="">
+                                <h2>
+                                    Getting Started
+                                </h2>
+                                <h4>
+                                    How Many Services do you provide? We're going to split them up so your clients can book exactly what services you offer. For example, A '15 minute walk' is one service; 'Overnight Sitting' would be another. Each service has a title, a length of time (in minutes), and a cost. 
+                                </h4>
+                                <h3>
+                                How many services do you offer?
+                                </h3>
+                                <h4 class="white">
+                                    <input class="ak_input" id="services" placeholder="5" type="number" />
+                                </h4>
+                                <div class="inv_pay" id="next1" disabled="false">
+                                <a class="ak_btn" id="next1">next</a>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="section-linebox-2">
+                        <div class="row">
+                            <div class="">
+                                <h2>
+                                    Services
+                                </h2>
+                                <h4>
+                                    Enter Your services with their title (as they appear to your clients), the length of time in minutes, and 
+                                    the price you charge. You will be able to change or add to your services at any time by clicking on 'Services' in the nav bar. 
+                                </h4>
+
+                                {{#each service}}
+                                <h3>
+                                Service {{num}}
+                                </h3>
+                                <h4 class="white"><label>Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input id="title{{num}}" type="text"/></h4>
+                                <h4 class="white"><label>Price&nbsp;&nbsp;&nbsp;&nbsp;</label> <input id="price{{num}}" type="text"/></h4>
+                                <h4 class="white"><label>Length&nbsp;</label> <input id="length{{num}}" type="text"/></h4>
+                                {{/each}}
+
+                                <div class="inv_pay" id="finish" disabled="false">
+                                <a class="ak_btn" id="" >Finish</a>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                   <!--  <section id="section-linebox-3">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-8">
+                                <img class="imgSmall" src="/img/chat2.png">
+                            </div>
+                            <div class="">
+                                <h2>
+                                    Chat
+                                </h2>
+                                <h4>
+                                    The Trottr app allows you to stay in contact with your walker 24/7. Check in with your walker to see how your dog is doing, touch base about any special requirements your dog has, or ask any questions you may have.
+                                </h4>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="section-linebox-4">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-8">
+                                <img class="imgSmall" src="/img/invoice3.png">
+                            </div>
+                            <div class="">
+                                <h2>
+                                    Pay
+                                </h2>
+                                <h4>
+                                    All Trottr walks use GPS tracking. Invoices show you the path your dog walked as well as a picture from the journey. You can pay your walker at the touch of a button.
+                                </h4>
+                            </div>
+                        </div>
+                    </section> -->
+                </div><!-- /content -->
+            </div><!-- /tabs -->
+        </section>
+        <!-- Related demos -->
+
+    </div><!-- /container -->
+</template>

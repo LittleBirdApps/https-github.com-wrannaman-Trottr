@@ -1,0 +1,19 @@
+<template name="clientReviews">
+    <div class="container">
+        <div id="morphsearch" class="morphsearch open">
+            <div class="morphsearch-content">
+            <a href="/findWalker" > <img style="margin-top:5px;" src='/img/back_btn.png'> </a>
+            
+                <div id="table" style="width:98%;margin-left:1%;margin-top:3%;">
+                {{> reactiveTable collection=Reviews settings=settings}}
+            </div>
+            <div>
+                {{#each Reviews}}
+                {{/each}}
+            </div>
+            </div><!-- /morphsearch-content -->
+            <span class="morphsearch-close"></span>
+        </div><!-- /morphsearch -->
+        <div class="overlay"></div>
+    </div><!-- /container -->
+</template>
