@@ -28,20 +28,6 @@ Meteor.users.allow({
   }
 });
 
-//sikka variables, going to have to change each time sikka upgrades
-// its the firewal to prevent dos attacks.
-// publickey 6LcwHgQTAAAAAJ9mPAOHJ2iDBuPhY1MvoZTQX3XX
-// secret 6LcwHgQTAAAAANIUiNzN6UkR7fmDWdwYSnvhULu0
-
-// Meteor.startup(function () {
-//     process.env.SIKKA_CAPTCHA_SITE_KEY = '6LcwHgQTAAAAAJ9mPAOHJ2iDBuPhY1MvoZTQX3XX'
-//     process.env.SIKKA_CAPTCHA_SECRET = '6LcwHgQTAAAAANIUiNzN6UkR7fmDWdwYSnvhULu0'
-// });
-
-// Meteor.startup(function () {
-//     export SIKKA_CAPTCHA_SITE_KEY = '6LcwHgQTAAAAAJ9mPAOHJ2iDBuPhY1MvoZTQX3XX'
-//     export SIKKA_CAPTCHA_SECRET = '6LcwHgQTAAAAANIUiNzN6UkR7fmDWdwYSnvhULu0'
-// })
 Meteor.setTimeout(function () {
     console.log(Meteor.settings)
     console.log(Meteor.settings)
